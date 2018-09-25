@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вадим Кордович](https://up.htmlacademy.ru/adaptive/15/user/646617).
-* Наставник: `Неизвестно`.
+* Наставник: [Удовенко Марина](https://up.htmlacademy.ru/htmlcss/22/user/7570).
 
 ---
 
