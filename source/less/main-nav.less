@@ -1,0 +1,38 @@
+@main-BackgroundColor: hsl(211, 43%, 27%);
+@main-FontFamily: "Open Sans", "Arial", sans-serif;
+@main-FontSize: 18px;
+@main-line: 32px;
+@main-FontColor: hsl(0, 0%, 100%);
+
+.main-nav {
+  font-family: @main-FontFamily;
+  font-size: @main-FontSize;
+  color: @main-FontColor;
+  line-height: @main-line;
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__list-item {
+  width: 320px;
+  min-height: 66px;
+  border-bottom: 1px solid darken(@main-BackgroundColor, 100%);
+  border-top: 1px solid #485461;
+  text-align: center;
+  background-color: @main-BackgroundColor;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-top: 16px;
+}
+
+.site-list__adress {
+  text-decoration: none;
+  color: @main-FontColor;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+}

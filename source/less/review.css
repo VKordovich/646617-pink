@@ -1,0 +1,42 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.reviews {
+  width: 320px;
+  background-color: white;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  position: relative;
+}
+.reviews__item {
+  margin: 0;
+  text-align: center;
+  padding-top: 23px;
+}
+.reviews__name {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+}
+.reviews__quote {
+  font-style: normal;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.reviews__toggles {
+  margin: 26px 0;
+}
+.review__angle {
+  width: 320px;
+  height: 31px;
+  position: absolute;
+  bottom: -28px;
+}

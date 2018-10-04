@@ -1,0 +1,80 @@
+@app-BackgroundColor: hsl(213, 43%, 19%);
+@app-FontFamily: "Open Sans", "Arial", sans-serif;
+@app-FontSize: 14px;
+@app-line: 24px;
+@app-FontColor: hsl(0, 0%, 100%);
+
+.pink-application {
+  background-color: @app-BackgroundColor;
+  font-family: @app-FontFamily;
+  width: 320px;
+  min-height: 271px;
+}
+
+.pink-application__button-app {
+  margin-left: 20px;
+  margin-top: 28px;
+}
+
+.pink-application__platforms {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 207px;
+  margin: auto;
+  margin-top: 32px;
+  align-items: flex-end;
+}
+
+.pink-application__item-img {
+  text-decoration: none;
+  font-size: 0;
+}
+
+.pink-application__item {
+  width: 47px;
+  height: 56px;
+}
+
+.pink-application__item--apple {
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.pink-application__item--android {
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+}
+
+.pink-application__item--win {
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
+}
+
+.pink-application__more-platforms {
+  color: @app-FontColor;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  padding: 0 43px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}

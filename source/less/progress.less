@@ -1,0 +1,41 @@
+@progress-background: #f2f2f2;
+@progress-font-size: 18px;
+@progress-font-height: 30px;
+@progress-family:  "Open Sans", "Arial", sans-serif;
+@color: #283645;
+
+.progress {
+  border: none;
+  background-color: @progress-background;
+  margin: 0;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.progress-wrapper {
+  background-color: @progress-background;
+}
+
+.progress__title {
+  background-color: @progress-background;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  padding: 35px 14px;
+  text-align: center;
+}
+
+.progress__name {
+  display: block;
+  font-size: @progress-font-size;
+  line-height: @progress-font-height;
+  color: @color;
+  font-weight: 400;
+  padding: 0 0 0 70px;
+  margin-bottom: 56px;
+}
+
+.progress__check-name {
+  display: none;
+}
