@@ -5,6 +5,7 @@
   padding: 0;
   text-align: center;
 }
+
 .comment__title {
   font-size: 14px;
   line-height: 30px;
@@ -12,6 +13,7 @@
   text-transform: uppercase;
   padding: 10px 14px;
 }
+
 .comment__fullpls {
   border: 2px solid #e5e5e5;
   font-size: 18px;

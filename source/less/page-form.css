@@ -5,6 +5,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
 }
+
 .page-form__text {
   font-size: 14px;
   line-height: 30px;
@@ -12,9 +13,11 @@
   margin: 0;
   text-align: center;
 }
+
 .page-form__contact {
   margin-top: 35px;
 }
+
 .page-form__button {
   background-color: #2aab6d;
   border-radius: 2%;
@@ -22,12 +25,14 @@
   margin-top: 48px;
   text-transform: uppercase;
 }
+
 .page-form__note {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   margin-top: 40px;
 }
+
 .page-form__star {
   color: #d22856;
 }

@@ -3,6 +3,7 @@
   background-color: #f2f2f2;
   padding-top: 20px;
 }
+
 .editor__uppload-photo {
   font-size: 0;
   width: 280px;
@@ -10,6 +11,7 @@
   background-image: url("../img/photo-road-mobile@1x.jpg");
   margin: auto;
 }
+
 .editor__list-tool {
   list-style: none;
   margin: 0;
@@ -19,9 +21,11 @@
   justify-content: center;
   margin-top: 30px;
 }
+
 .editor__item {
   margin-right: 5px;
 }
+
 .editor__range {
   width: 242px;
   height: 2px;
@@ -31,6 +35,7 @@
   position: relative;
   margin-bottom: 30px;
 }
+
 .editor__point {
   width: 10px;
   height: 10px;
@@ -41,15 +46,18 @@
   right: 35px;
   background-color: #f2f2f2;
 }
+
 .editor__button {
   color: #dddfe0;
   border-color: #dddfe0;
   margin: 6px;
 }
+
 .editor--set {
   color: #d22856;
   border-color: #d22856;
 }
+
 .editor__wrap-button {
   padding: 40px 0;
   border-top: 2px solid #dddfe0;

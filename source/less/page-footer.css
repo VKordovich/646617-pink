@@ -7,12 +7,14 @@
   font-family: "Open Sans", "Arial", sans-serif;
   position: relative;
 }
+
 .page-footer__text {
   margin: 0;
   padding: 45px 49px;
   text-align: center;
   font-weight: 200;
 }
+
 .page-footer__contacts-list {
   list-style: none;
   margin: auto;
@@ -22,12 +24,14 @@
   font-size: 18px;
   font-weight: 800;
 }
+
 .page-footer__type-contact {
   display: block;
   font-size: 24px;
   font-weight: 200;
   color: #d22856;
 }
+
 .page-footer__map {
   position: absolute;
   top: 0;

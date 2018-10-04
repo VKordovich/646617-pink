@@ -4,11 +4,13 @@
   color: #ffffff;
   line-height: 32px;
 }
+
 .site-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .site-list__list-item {
   width: 320px;
   min-height: 66px;
@@ -20,6 +22,7 @@
   box-sizing: border-box;
   padding-top: 16px;
 }
+
 .site-list__adress {
   text-decoration: none;
   color: #ffffff;

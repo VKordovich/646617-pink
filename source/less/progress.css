@@ -5,9 +5,11 @@
   padding: 0 20px;
   text-align: start;
 }
+
 .progress-wrapper {
   background-color: #f2f2f2;
 }
+
 .progress__title {
   background-color: #f2f2f2;
   font-size: 14px;
@@ -17,6 +19,7 @@
   padding: 35px 14px;
   text-align: center;
 }
+
 .progress__name {
   display: block;
   font-size: 18px;
@@ -26,6 +29,7 @@
   padding: 0 0 0 70px;
   margin-bottom: 56px;
 }
+
 .progress__check-name {
   display: none;
 }
