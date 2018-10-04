@@ -1,32 +1,18 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .predestination {
   background-color: #f2f2f2;
   width: 320px;
 }
-
 .predestination-wrapper-title {
   background-color: white;
   padding: 15px 0;
   position: relative;
 }
-
 .predestination__angle {
   width: 320px;
   height: 31px;
   position: absolute;
   bottom: -28px;
 }
-
 .predestination__title {
   color: black;
   font-size: 24px;
@@ -35,7 +21,6 @@
   font-weight: 100;
   text-align: center;
 }
-
 .predestination__list {
   list-style: none;
   margin: 0;
@@ -44,15 +29,12 @@
   background-color: #f2f2f2;
   font-family: "Open Sans", "Arial", sans-serif;
 }
-
 .predestination__item {
   text-align: center;
 }
-
 .predestination__item-text {
   padding: 0 10px;
 }
-
 .predestination__img {
   background-color: #f2f2f2;
   min-height: 280px;

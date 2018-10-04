@@ -1,5 +1,6 @@
 @import "page-header.less";
 @import "main-nav.less";
+@import "page-main.less";
 @import "pink-application.less";
 @import "predestination.less";
 @import "review.less";
@@ -20,21 +21,34 @@
 @import "editor.less";
 
 body {
+  min-width: 320px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding: 10;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645;
+  font-style: normal;
+
+  background-color: black;
 }
 
-.page-header,
-.page-main,
-.page-footer,
-.page-photo,
-.page-form,
-.footer {
-  width: 320px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-}
+  overflow: hidden;
 
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
