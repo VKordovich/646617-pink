@@ -1,0 +1,35 @@
+.progress {
+  border: none;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.progress-wrapper {
+  background-color: #f2f2f2;
+}
+
+.progress__title {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  padding: 35px 14px;
+  text-align: center;
+}
+
+.progress__name {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
+  padding: 0 0 0 70px;
+  margin-bottom: 56px;
+}
+
+.progress__check-name {
+  display: none;
+}

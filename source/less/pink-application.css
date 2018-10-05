@@ -1,0 +1,52 @@
+.pink-application {
+  background-color: #1c2e45;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.pink-application__button-app {
+  margin-top: 28px;
+}
+.main-wrapper-app {
+  margin: 0 auto;
+  width: 280px;
+}
+.pink-application__platforms {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 207px;
+  margin: auto;
+  margin-top: 32px;
+  align-items: flex-end;
+}
+.pink-application__item-img {
+  text-decoration: none;
+  font-size: 0;
+}
+.pink-application__item {
+  width: 47px;
+  height: 56px;
+}
+.pink-application__item--apple {
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+.pink-application__item--android {
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+}
+.pink-application__item--win {
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
+}
+.pink-application__more-platforms {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  text-align: center;
+}

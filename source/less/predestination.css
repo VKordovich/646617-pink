@@ -1,0 +1,44 @@
+.predestination {
+  background-color: #f2f2f2;
+}
+.predestination-wrapper-title {
+  background-color: white;
+  padding: 15px 0;
+  position: relative;
+}
+.predestination__angle {
+  width: 320px;
+  height: 31px;
+  position: absolute;
+  bottom: -28px;
+}
+.predestination__title {
+  color: black;
+  font-size: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+.predestination__list {
+  list-style: none;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.predestination__item {
+  text-align: center;
+}
+.predestination__item-text {
+  padding: 0 10px;
+}
+.predestination__img {
+  background-color: #f2f2f2;
+  min-height: 280px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 40px;
+}

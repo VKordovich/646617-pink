@@ -1,0 +1,53 @@
+@background-footer: #f2f2f2;
+@font-size-footer: 24px;
+@font-height-footer: 30px;
+@font-family:  "Open Sans", "Arial", sans-serif;
+@color-footer: #d22856;
+
+.page-footer {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: @font-size-footer;
+  color: black;
+  line-height: @font-height-footer;
+  font-family: @font-family;
+  position: relative;
+}
+
+.page-footer__text {
+  margin: 0;
+  padding: 45px 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+.page-footer__contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.page-footer__type-contact {
+  display: block;
+  font-size: @font-size-footer;
+  font-weight: 200;
+  color: @color-footer;
+}
+
+.page-footer__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-wrapper-footer {
+  width: 280px;
+  margin: 0 auto;
+}

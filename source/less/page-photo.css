@@ -1,0 +1,56 @@
+.page-photo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+.page-photo__text-top,
+.page-photo__text-bottom {
+  margin: 0;
+  padding: 40px 40px;
+  text-align: center;
+}
+.page-photo__item {
+  margin: 0;
+}
+.page-photo__author-picture {
+  margin: 0;
+  background-size: cover;
+  line-height: 0;
+}
+.page-photo__wrap {
+  width: 280px;
+  margin: auto;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+.page-photo__wrap-top {
+  width: 280px;
+  margin: auto;
+  background-color: #f2f2f2;
+}
+.page-photo__author-name {
+  font-style: normal;
+  font-weight: 800;
+}
+.page-photo__time {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.page-photo__text {
+  margin: 0;
+}
+.page-photo__wrap-text {
+  padding: 20px 10px;
+}
+.page-photo__likes {
+  color: #d22856;
+  margin: 0;
+}

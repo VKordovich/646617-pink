@@ -1,0 +1,70 @@
+@header-BackgroundColor: hsl(211, 43%, 27%);
+@header-FontFamily: "Open ans", "Arial", sans-serif;
+@header-FontSize: 18px;
+@header-FontColor: hsl(0, 0%, 100%);
+@header_BackgroundMix: darken(@header-BackgroundColor, 8%);
+
+.page-header {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: @header-BackgroundColor;
+  font-size: @header-FontSize;
+  color: @header-FontColor;
+  font-family: @header-FontFamily;
+}
+
+.main-wrapper-head {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
+
+.page-header__logo {
+  background-color: @header-BackgroundColor;
+  border-bottom: 1px solid darken(@header-BackgroundColor, 100%);
+  border-top: 1px solid #485461;
+}
+
+.page-header__logo-head {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.page-header__button-head {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-top: 21px;
+  margin-left: auto;
+}
+
+.page-header__main-image {
+  min-height: 395px;
+  background-color: @header-BackgroundColor;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.page-header__pink-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.page-header__information {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 30px 10px 60px;
+  text-align: center;
+  margin: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -63px;
+  background-repeat: no-repeat;
+}

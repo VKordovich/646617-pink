@@ -1,0 +1,42 @@
+@rev-background-color: white;
+@rev-size: 14px;
+@rev-height: 30px;
+@rev-family:  "Open Sans", "Arial", sans-serif;
+@rev-color: black;
+
+.reviews {
+  background-color: @rev-background-color;
+  font-size: @rev-size;
+  font-family: @rev-family;
+  position: relative;
+}
+
+.reviews__item {
+  margin: 0;
+  text-align: center;
+  padding-top: 23px;
+}
+
+.reviews__name {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.reviews__quote {
+  font-style: normal;
+  line-height: @rev-height;
+  padding: 0 20px;
+}
+
+.reviews__toggles {
+  margin: 26px 0;
+}
+
+.review__angle {
+  width: 320px;
+  height: 31px;
+  position: absolute;
+  bottom: -27px;
+}
