@@ -5,8 +5,6 @@
 @header_BackgroundMix: darken(@header-BackgroundColor, 8%);
 
 .page-header {
-  width: 320px;
-  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -16,17 +14,21 @@
   font-family: @header-FontFamily;
 }
 
+.main-wrapper-head {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
+
 .page-header__logo {
-  min-height: 70px;
   background-color: @header-BackgroundColor;
   border-bottom: 1px solid darken(@header-BackgroundColor, 100%);
   border-top: 1px solid #485461;
-  display: flex;
 }
 
 .page-header__logo-head {
   margin-top: 22px;
-  padding-left: 20px;
+  margin-bottom: 22px;
 }
 
 .page-header__button-head {
@@ -38,7 +40,6 @@
   width: 24px;
   height: 24px;
   margin-top: 21px;
-  margin-right: 20px;
   margin-left: auto;
 }
 
@@ -46,7 +47,9 @@
   min-height: 395px;
   background-color: @header-BackgroundColor;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
 }
 
 .page-header__pink-image {

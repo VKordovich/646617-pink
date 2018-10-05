@@ -1,5 +1,4 @@
 .reviews {
-  width: 320px;
   background-color: white;
   font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -28,5 +27,5 @@
   width: 320px;
   height: 31px;
   position: absolute;
-  bottom: -28px;
+  bottom: -27px;
 }

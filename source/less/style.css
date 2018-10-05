@@ -1,6 +1,4 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -9,16 +7,19 @@
   color: #ffffff;
   font-family: "Open ans", "Arial", sans-serif;
 }
+.main-wrapper-head {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
 .page-header__logo {
-  min-height: 70px;
   background-color: #274462;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
-  display: flex;
 }
 .page-header__logo-head {
   margin-top: 22px;
-  padding-left: 20px;
+  margin-bottom: 22px;
 }
 .page-header__button-head {
   font-size: 0;
@@ -29,14 +30,15 @@
   width: 24px;
   height: 24px;
   margin-top: 21px;
-  margin-right: 20px;
   margin-left: auto;
 }
 .page-header__main-image {
   min-height: 395px;
   background-color: #274462;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
 }
 .page-header__pink-image {
   position: absolute;
@@ -62,11 +64,9 @@
 .site-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .site-list__list-item {
-  width: 320px;
-  min-height: 66px;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
   text-align: center;
@@ -74,6 +74,7 @@
   vertical-align: middle;
   box-sizing: border-box;
   padding-top: 16px;
+  padding-bottom: 16px;
 }
 .site-list__adress {
   text-decoration: none;
@@ -83,7 +84,6 @@
   vertical-align: middle;
 }
 .page-main {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -92,12 +92,13 @@
 .pink-application {
   background-color: #1c2e45;
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 320px;
-  min-height: 271px;
 }
 .pink-application__button-app {
-  margin-left: 20px;
   margin-top: 28px;
+}
+.main-wrapper-app {
+  margin: 0 auto;
+  width: 280px;
 }
 .pink-application__platforms {
   list-style: none;
@@ -138,12 +139,10 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 200;
-  padding: 0 43px;
   text-align: center;
 }
 .predestination {
   background-color: #f2f2f2;
-  width: 320px;
 }
 .predestination-wrapper-title {
   background-color: white;
@@ -187,7 +186,6 @@
   margin-top: 40px;
 }
 .reviews {
-  width: 320px;
   background-color: white;
   font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -216,11 +214,9 @@
   width: 320px;
   height: 31px;
   position: absolute;
-  bottom: -28px;
+  bottom: -27px;
 }
 .cost {
-  width: 320px;
-  min-height: 471px;
   background-color: #f2f2f2;
   border-top: 1px solid transparent;
 }
@@ -228,7 +224,6 @@
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
   margin-top: 90px;
-  width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 .cost__table-head,
@@ -241,7 +236,7 @@
   color: white;
   font-size: 18px;
   line-height: 30px;
-  padding: 20px 100px;
+  padding: 20px 67px;
   text-transform: uppercase;
 }
 .cost__hit {
@@ -255,10 +250,13 @@
   background-color: white;
   color: black;
   font-weight: 400;
-  padding: 20px 140px 20px 17px;
+  padding: 20px 20px 20px 17px;
+}
+.main-wrapper-cost {
+  width: 280px;
+  margin: 0 auto;
 }
 .page-footer {
-  width: 320px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -272,15 +270,14 @@
 }
 .page-footer__text {
   margin: 0;
-  padding: 45px 49px;
+  padding: 45px 0;
   text-align: center;
   font-weight: 200;
 }
 .page-footer__contacts-list {
   list-style: none;
-  margin: auto;
+  margin: 0;
   padding: 0;
-  width: 250px;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
@@ -294,7 +291,12 @@
 .page-footer__map {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: -1;
+}
+.main-wrapper-footer {
+  width: 280px;
+  margin: 0 auto;
 }
 .button {
   width: 280px;
@@ -660,8 +662,12 @@
   padding: 40px 0;
   border-top: 2px solid #dddfe0;
 }
+.main-wrapper {
+  width: 280px;
+  margin: auto;
+}
 body {
-  min-width: 320px;
+  width: 320px;
   margin: 0;
   padding: 10;
   font-size: 18px;

@@ -5,18 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic">
-  <link rel="stylesheet" href="less/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
+
     <div class="page-header__logo">
+      <div class="main-wrapper-head">
       <a class="page-header__img">
         <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
       </a>
       <button class="page-header__button-head " type="button">Открыть меню</button>
     </div>
+  </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__list-item">
@@ -34,9 +37,12 @@
       </ul>
     </nav>
     <div class="page-header__main-image">
+        <div class="main-wrapper-head">
       <img class="page-header__pink-image" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Взгляни на мир позитивно!">
+        </div>
     </div>
     <section class="pink-application">
+        <div class="main-wrapper-app">
       <h2 class="visually-hidden">Доступно на многих платформах</h2>
       <button class="button pink-application__button-app pink-application--set" type="button">Скачать приложение</button>
       <ul class="pink-application__platforms">
@@ -51,7 +57,9 @@
         </li>
       </ul>
       <p class="pink-application__more-platforms">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
     </section>
+
   </header>
 
   <main class="page-main">
@@ -112,6 +120,7 @@
     </section>
 
     <section class="cost">
+        <div class="main-wrapper-cost">
       <h2 class="visually-hidden">Стоимость</h2>
       <table class="cost__rate-table">
         <tr class="cost__row">
@@ -132,11 +141,14 @@
         <button class="slider__toggle slider__toggle--active" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </p>
+        </div>
     </section>
+
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__text">Остались вопросы?<br>Свяжитесь с нами!</p>
+      <div class="main-wrapper-footer">
+    <p class="page-footer__text">Остались вопросы?Свяжитесь с нами!</p>
     <ul class="page-footer__contacts-list">
       <li class="page-footer__item">
         <p class="page-footer__select-contact">Звоните:
@@ -154,7 +166,9 @@
         </p>
       </li>
     </ul>
+
     <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="612" alt="Карта">
+  </div>
   </footer>
 
 </body>
