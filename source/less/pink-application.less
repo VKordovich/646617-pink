@@ -7,6 +7,11 @@
 .pink-application {
   background-color: @app-BackgroundColor;
   font-family: @app-FontFamily;
+  padding-bottom: 1px;
+}
+
+.pink__title {
+  display: none;
 }
 
 .pink-application__button-app {
@@ -64,4 +69,26 @@
   line-height: 24px;
   font-weight: 200;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pink-application {
+    order: -1;
+    background-color: transparent;
+  }
+
+  .pink__title {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pink-application {
+    order: -1;
+    background-color: transparent;
+  }
+
+  .pink__title {
+    display: block;
+  }
 }

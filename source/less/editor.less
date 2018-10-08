@@ -62,3 +62,53 @@
   padding: 40px 0;
   border-top: 2px solid #dddfe0;
 }
+
+.editor__range--hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .editor {
+    display: flex;
+    padding: 50px 20px;
+  }
+
+  .editor__uppload-photo {
+    width: 538px;
+    min-height: 464px;
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+  }
+
+  .editor__range--hidden {
+    display: block;
+  }
+
+  .editor-wrapper-tool {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .editor__list-tool {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .editor {
+    width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+  }
+
+  .editor__uppload-photo {
+    width: 347px;
+    min-height: 464px;
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+    margin-right: 14px;
+    margin-left: 50px;
+  }
+}

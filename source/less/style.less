@@ -5,9 +5,7 @@
 @import "predestination.less";
 @import "review.less";
 @import "cost.less";
-@import "page-footer.less";
 @import "button.less";
-@import "toggle.less";
 @import "form-name.less";
 @import "progress.less";
 @import "contact.less";
@@ -19,37 +17,52 @@
 @import "copyright.less";
 @import "page-photo";
 @import "editor.less";
-@import "main-wrapper.less";
+@import "toggle.less";
+@import "page-footer.less";
 
-body {
-  width: 320px;
-  margin: 0;
-  padding: 10;
+@media (min-width: 320px) {
+  body {
+    width: 320px;
+    margin: 0 auto;
+    padding: 10;
 
-  font-size: 18px;
-  line-height: 27px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #283645;
-  font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #283645;
+    font-style: normal;
 
-  background-color: black;
+    background-color: black;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
 }
 
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
 }

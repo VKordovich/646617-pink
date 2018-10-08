@@ -7,8 +7,8 @@
 
 .form-name {
   border: none;
-  padding: 0 20px;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -23,11 +23,37 @@
 
 .form-name__input-name {
   border: 2px solid #e5e5e5;
-  padding: 20px 0 20px 20px;
+  padding: 20px 7px 20px 20px;
   margin-top: 15px;
   font-size: @name-font-size;
   font-family: @name-family;
   font-weight: 400;
-  width: 256px;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .form-name__input-name {
+    width: 626px;
+  }
+
+  .form-name__name {
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .form-name__input-name--long {
+    width: 667px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-name__input-name {
+    width: 348px;
+  }
+
+  .form-name__input-name--long {
+    width: 388px;
+  }
 }
