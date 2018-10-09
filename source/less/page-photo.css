@@ -73,8 +73,6 @@
 .main-wrapper-photos {
   width: 280px;
   margin: 0 auto;
-}
-.main-wrapper-photos--color {
   background-color: #f2f2f2;
 }
 @media (min-width: 768px) {

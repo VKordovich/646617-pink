@@ -10,6 +10,9 @@
   border-radius: 50%;
   border: none;
 }
+.slider__toggle svg {
+  display: none;
+}
 .slider__toggle--active {
   border: 3px solid black;
   width: 12px;
@@ -19,6 +22,9 @@
   .slider__toggles {
     position: relative;
   }
+  .slider__toggle svg {
+    display: block;
+  }
   .slider__toggle {
     width: 50px;
     height: 50px;
@@ -27,25 +33,16 @@
     border: none;
   }
   .slider__toggle--left {
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     bottom: -160px;
     left: 175px;
   }
   .slider__toggle--right {
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     bottom: -160px;
     right: 175px;
   }
   .slider__toggle--center {
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 85px;
     height: 70px;
   }

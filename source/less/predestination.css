@@ -39,19 +39,9 @@
   font-size: 0;
   background-color: #f2f2f2;
   min-height: 280px;
-}
-.predestination__img--new {
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: center;
-}
-.predestination__img--up {
-  display: none;
-  font-size: 0;
-}
-.predestination__img--change {
-  display: none;
-  font-size: 0;
 }
 .predestination__research {
   display: none;
@@ -82,7 +72,7 @@
     order: -1;
     z-index: 5;
   }
-  .predestination__img--new {
+  .predestination__img {
     width: 280px;
     background-color: transparent;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -94,7 +84,8 @@
     background-color: white;
     display: flex;
   }
-  .predestination__clock {
+  .predestination__research::before {
+    content: "";
     width: 300px;
     min-height: 300px;
     display: block;
@@ -131,13 +122,8 @@
     order: 1;
     z-index: 5;
   }
-  .predestination__img--new {
-    width: 270px;
-    min-height: 306px;
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    margin-top: 40px;
-  }
-  .predestination__img--up {
+  .predestination__img-all::before {
+    content: "";
     background-color: transparent;
     display: block;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
@@ -146,7 +132,8 @@
     width: 270px;
     min-height: 306px;
   }
-  .predestination__img--change {
+  .predestination__img-all::after {
+    content: "";
     background-color: transparent;
     display: block;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
@@ -154,6 +141,12 @@
     background-position-x: center;
     width: 270px;
     min-height: 306px;
+  }
+  .predestination__img {
+    width: 270px;
+    min-height: 306px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    margin-top: 0;
   }
   .predestination__wrap {
     display: flex;
@@ -167,6 +160,17 @@
     order: 2;
     background-color: #f2f2f2;
     display: flex;
+  }
+  .predestination__research::before {
+    content: "";
+    width: 300px;
+    min-height: 300px;
+    display: block;
+    font-size: 0;
+    margin-right: 65px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .research-wrap {
     width: 300px;
