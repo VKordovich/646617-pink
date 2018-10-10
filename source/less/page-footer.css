@@ -35,11 +35,12 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 320px;
+  width: 100%;
   min-height: 645px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .main-wrapper-footer {
   width: 280px;
@@ -62,17 +63,18 @@
 }
 @media (min-width: 768px) {
   .main-wrapper-footer {
-    width: 728px;
+    width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 0 14%;
     background-color: white;
+    box-sizing: border-box;
   }
   .page-footer {
     background-color: transparent;
     min-height: 770px;
   }
   .page-footer__text {
-    padding: 40px 194px 18px;
+    padding: 40px 161px 18px;
   }
   .page-footer__contacts-list {
     display: flex;
@@ -88,7 +90,7 @@
   }
   .page-footer__triangle-img {
     width: 768px;
-    top: 369px;
+    top: 424px;
     height: 100px;
   }
   .page-footer__triangle {
@@ -96,7 +98,7 @@
     height: 96px;
   }
   .page-footer__map {
-    width: 768px;
+    width: 100%;
     min-height: 767px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position-y: -56px;
@@ -107,19 +109,15 @@
     background-color: white;
     position: absolute;
     bottom: 0;
-    width: 768px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .main-wrapper-footer {
-    width: 1200px;
-    box-sizing: border-box;
-  }
   .page-footer__item--position {
     order: 1;
   }
   .page-footer__text {
-    padding: 40px 410px 18px;
+    padding: 40px 262px 18px;
   }
   .page-footer__triangle {
     width: 1200px;
@@ -127,14 +125,11 @@
     bottom: -94px;
   }
   .page-footer__triangle-img {
-    top: 283px;
+    top: 336px;
   }
   .page-footer__map {
-    width: 1200px;
+    width: 100%;
     min-height: 767px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-  }
-  .page-footer__main {
-    width: 1200px;
   }
 }
