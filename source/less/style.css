@@ -320,23 +320,22 @@
   .predestination__wrap {
     display: flex;
   }
-  .predestination__img-all {
-    order: -1;
-    z-index: 5;
-  }
   .predestination__img {
-    width: 280px;
+    width: 505px;
     background-color: transparent;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     min-height: 481px;
     margin-top: 12px;
+    order: -1;
+    z-index: 5;
   }
   .predestination__research {
     order: 2;
     background-color: white;
     display: flex;
   }
-  .predestination__clock {
+  .predestination__research::before {
+    content: "";
     width: 300px;
     min-height: 300px;
     display: block;
@@ -367,35 +366,11 @@
     display: flex;
     order: 2;
   }
-  .predestination__img-all {
-    display: flex;
-    flex-direction: row;
-    order: 1;
-    z-index: 5;
-  }
-  .predestination__img-all::before {
-    background-color: transparent;
-    display: block;
-    background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 270px;
-    min-height: 306px;
-  }
-  .predestination__img-all::after {
-    background-color: transparent;
-    display: block;
-    background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 270px;
-    min-height: 306px;
-  }
   .predestination__img {
-    width: 270px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-1-desktop@1x.png");
+    background-position-x: right, center, left;
+    width: 1000px;
     min-height: 306px;
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    margin-top: 40px;
   }
   .predestination__wrap {
     display: flex;
@@ -409,6 +384,17 @@
     order: 2;
     background-color: #f2f2f2;
     display: flex;
+  }
+  .predestination__research::before {
+    content: "";
+    width: 300px;
+    min-height: 300px;
+    display: block;
+    font-size: 0;
+    margin-right: 65px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .research-wrap {
     width: 300px;
@@ -808,16 +794,21 @@
   .page-form__main-form {
     width: 1000px;
     margin: auto;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .page-form__form-name {
     width: 450px;
-    display: inline-block;
     margin: 20px;
   }
   .page-form__app {
     width: 450px;
-    display: inline-block;
+  }
+  .page-form__contact,
+  .page-form__progress,
+  .page-form__comment {
+    width: 1000px;
   }
 }
 .footer {
@@ -978,8 +969,6 @@
 .main-wrapper-photos {
   width: 280px;
   margin: 0 auto;
-}
-.main-wrapper-photos--color {
   background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
@@ -1046,7 +1035,7 @@
     width: 1000px;
   }
   .wrapper-card {
-    width: 1180px;
+    width: 1026px;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -1181,6 +1170,9 @@
   border-radius: 50%;
   border: none;
 }
+.slider__toggle svg {
+  display: none;
+}
 .slider__toggle--active {
   border: 3px solid black;
   width: 12px;
@@ -1189,6 +1181,13 @@
 @media (min-width: 1200px) {
   .slider__toggles {
     position: relative;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70px;
+  }
+  .slider__toggle svg {
+    display: block;
   }
   .slider__toggle {
     width: 50px;
@@ -1198,27 +1197,17 @@
     border: none;
   }
   .slider__toggle--left {
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     bottom: -160px;
     left: 175px;
   }
   .slider__toggle--right {
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
     bottom: -160px;
     right: 175px;
   }
   .slider__toggle--center {
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 85px;
-    height: 70px;
+    display: none;
   }
 }
 .page-footer {
@@ -1362,14 +1351,13 @@
   }
 }
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 27px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
   font-style: normal;
-  background-color: black;
 }
 img {
   max-width: 100%;
@@ -1387,11 +1375,11 @@ img {
 }
 @media (min-width: 768px) {
   body {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   body {
-    width: 1200px;
+    min-width: 1200px;
   }
 }

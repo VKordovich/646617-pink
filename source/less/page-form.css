@@ -72,15 +72,20 @@
   .page-form__main-form {
     width: 1000px;
     margin: auto;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .page-form__form-name {
     width: 450px;
-    display: inline-block;
     margin: 20px;
   }
   .page-form__app {
     width: 450px;
-    display: inline-block;
+  }
+  .page-form__contact,
+  .page-form__progress,
+  .page-form__comment {
+    width: 1000px;
   }
 }
