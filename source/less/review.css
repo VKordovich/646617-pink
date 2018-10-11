@@ -15,6 +15,9 @@
   line-height: 30px;
   font-weight: 800;
 }
+.reviews__years {
+  display: none;
+}
 .reviews__quote {
   font-style: normal;
   line-height: 30px;
@@ -28,4 +31,43 @@
   height: 31px;
   position: absolute;
   bottom: -27px;
+}
+@media (min-width: 768px) {
+  .reviews__years {
+    display: inline;
+    order: 2;
+  }
+  .reviews__name {
+    order: 1;
+  }
+  .reviews__quote {
+    padding: 0 20px;
+  }
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .review__angle {
+    width: 768px;
+    height: 60px;
+    bottom: -60px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__item {
+    width: 656px;
+    margin: auto;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__toggles {
+    order: -1;
+  }
+  .review__angle {
+    width: 1200px;
+    height: 94px;
+    bottom: -94px;
+  }
 }

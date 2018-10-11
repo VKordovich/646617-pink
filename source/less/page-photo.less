@@ -5,11 +5,8 @@
 @photo-FontColor: #283645;
 
 .page-photo {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background-color: white;
   font-size: @photo-FontSize;
   line-height: @photo-line;
@@ -20,31 +17,57 @@
 .page-photo__text-top,
 .page-photo__text-bottom {
   margin: 0;
-  padding: 40px 40px;
+  padding: 40px 15px;
   text-align: center;
 }
 
 .page-photo__item {
   margin: 0;
+  width: 100%;
 }
 
 .page-photo__author-picture {
   margin: 0;
   background-size: cover;
   line-height: 0;
+  font-size: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+}
+
+.page-photo__author-picture--panoram {
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  min-height: 137px;
+  background-position: center;
+}
+
+.page-photo__author-picture--car {
+  background-image: url("../img/photo-car-mobile@1x.jpg");
+}
+
+.page-photo__author-picture--drumset {
+  background-image: url("../img/photo-drumset-mobile@1x.jpg");
+}
+
+.page-photo__author-picture--window {
+  background-image: url("../img/photo-window-mobile@1x.jpg");
+}
+
+.page-photo__author-picture--fair {
+  background-image: url("../img/photo-fair-mobile@1x.jpg");
+}
+
+.page-photo__author-picture--pov {
+  background-image: url("../img/photo-pov-mobile@1x.jpg");
+}
+
+.page-photo__author-picture--wing {
+  background-image: url("../img/photo-wing-mobile@1x.jpg");
 }
 
 .page-photo__wrap {
-  width: 280px;
-  margin: auto;
-  background-color: @photo-BackgroundColor;
   margin-top: 20px;
-}
-
-.page-photo__wrap-top {
-  width: 280px;
-  margin: auto;
-  background-color: @photo-BackgroundColor;
 }
 
 .page-photo__author-name {
@@ -69,4 +92,134 @@
 .page-photo__likes {
   color: #d22856;
   margin: 0;
+}
+
+.main-wrapper-photos {
+  width: 280px;
+  margin: 0 auto;
+  background-color: @photo-BackgroundColor;
+}
+
+
+@media (min-width: 768px) {
+  .page-photo__author-picture {
+    min-height: 354px;
+  }
+
+  .page-photo__author-picture--panoram {
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    min-height: 559px;
+  }
+
+  .main-wrapper-photos {
+    width: 354px;
+  }
+
+  .main-wrapper-photos--panoram {
+    width: 728px;
+  }
+
+  .wrapper-card {
+    width: 728px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-photo__wrap {
+    margin-right: 20px;
+    display: flex;
+  }
+
+  .page-photo__wrap:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .page-photo__author-picture--car {
+    background-image: url("../img/photo-car-tablet@1x.jpg");
+  }
+
+  .page-photo__author-picture--drumset {
+    background-image: url("../img/photo-drumset-tablet@1x.jpg");
+  }
+
+  .page-photo__author-picture--window {
+    background-image: url("../img/photo-window-tablet@1x.jpg");
+  }
+
+  .page-photo__author-picture--fair {
+    background-image: url("../img/photo-fair-tablet@1x.jpg");
+  }
+
+  .page-photo__author-picture--pov {
+    background-image: url("../img/photo-pov-tablet@1x.jpg");
+  }
+
+  .page-photo__author-picture--wing {
+    background-image: url("../img/photo-wing-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-photo__author-picture {
+    min-height: 450px;
+  }
+
+  .main-wrapper-photos--text {
+    width: 514px;
+  }
+
+  .page-photo__author-picture--panoram {
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    min-height: 506px;
+  }
+
+  .main-wrapper-photos {
+    width: 320px;
+  }
+
+  .main-wrapper-photos--panoram {
+    width: 1000px;
+  }
+
+  .wrapper-card {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-photo__wrap:nth-child(even) {
+    margin-right: 20px;
+  }
+
+  .page-photo__wrap:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .page-photo__author-picture--car {
+    background-image: url("../img/photo-car-desktop@1x.jpg");
+  }
+
+  .page-photo__author-picture--drumset {
+    background-image: url("../img/photo-drumset-desktop@1x.jpg");
+  }
+
+  .page-photo__author-picture--window {
+    background-image: url("../img/photo-window-desktop@1x.jpg");
+  }
+
+  .page-photo__author-picture--fair {
+    background-image: url("../img/photo-fair-desktop@1x.jpg");
+  }
+
+  .page-photo__author-picture--pov {
+    background-image: url("../img/photo-pov-desktop@1x.jpg");
+  }
+
+  .page-photo__author-picture--wing {
+    background-image: url("../img/photo-wing-desktop@1x.jpg");
+  }
 }

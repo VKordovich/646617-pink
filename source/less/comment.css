@@ -1,11 +1,9 @@
 .comment {
-  width: 320px;
   border: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .comment__title {
   font-size: 14px;
   line-height: 30px;
@@ -13,15 +11,14 @@
   text-transform: uppercase;
   padding: 10px 14px;
 }
-
 .comment__fullpls {
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   height: 218px;
   padding: 20px;
-  box-sizing: border-box;
 }

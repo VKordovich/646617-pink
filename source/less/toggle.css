@@ -1,7 +1,6 @@
 .slider__toggles {
   text-align: center;
 }
-
 .slider__toggle {
   font-size: 0;
   padding: 0;
@@ -11,9 +10,43 @@
   border-radius: 50%;
   border: none;
 }
-
+.slider__toggle svg {
+  display: none;
+}
 .slider__toggle--active {
   border: 3px solid black;
   width: 12px;
   height: 12px;
+}
+@media (min-width: 1200px) {
+  .slider__toggles {
+    position: relative;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70px;
+  }
+  .slider__toggle svg {
+    display: block;
+  }
+  .slider__toggle {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  }
+  .slider__toggle--left {
+    position: absolute;
+    bottom: -160px;
+    left: 175px;
+  }
+  .slider__toggle--right {
+    position: absolute;
+    bottom: -160px;
+    right: 175px;
+  }
+  .slider__toggle--center {
+    display: none;
+  }
 }

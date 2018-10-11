@@ -3,7 +3,6 @@
   border-top: 1px solid transparent;
 }
 .cost__rate-table {
-  border: 1px solid #e5e5e5;
   border-collapse: collapse;
   margin-top: 90px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -22,7 +21,7 @@
   text-transform: uppercase;
 }
 .cost__hit {
-  font-size: 0;
+  display: none;
 }
 .cost__money {
   font-weight: 200;
@@ -35,6 +34,50 @@
   padding: 20px 20px 20px 17px;
 }
 .main-wrapper-cost {
-  width: 280px;
+  width: 95%;
   margin: 0 auto;
+  overflow: hidden;
+}
+.cost__cell-hidden,
+.cost__table-empty {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-wrapper-cost {
+    width: 728px;
+  }
+  .cost__rate-table {
+    width: 728px;
+    margin-bottom: 50px;
+  }
+  .cost__money {
+    display: block;
+  }
+  .cost__table-head {
+    padding: 20px 18px;
+    width: 320px;
+  }
+  .cost__toggles {
+    display: none;
+  }
+  .cost__table-text {
+    display: none;
+  }
+  .cost__table-empty {
+    display: table-cell;
+  }
+  .cost__cell-hidden {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    padding: 20px 20px 20px 17px;
+    border: 1px solid #e5e5e5;
+    width: 320px;
+    display: table-cell;
+  }
+  .cost__table-date {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

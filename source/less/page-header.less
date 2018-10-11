@@ -6,8 +6,6 @@
 
 .page-header {
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background-color: @header-BackgroundColor;
   font-size: @header-FontSize;
   color: @header-FontColor;
@@ -15,6 +13,18 @@
 }
 
 .main-wrapper-head {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
+
+.main-wrapper-photo {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+}
+
+.main-wrapper-form {
   margin: 0 auto;
   width: 280px;
   display: flex;
@@ -67,4 +77,88 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center -63px;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .main-wrapper-head {
+    width: 728px;
+  }
+
+  .wrapper-head-img {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header__main-image {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .page-header__pink-image {
+    position: relative;
+    width: 400px;
+    vertical-align: bottom;
+  }
+
+  .page-header__information {
+    padding: 30px 240px 60px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper-navigation {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1000px;
+  }
+
+  .page-header__main-nav {
+    margin-left: auto;
+  }
+
+  .wrapper-head-img {
+    width: 1000px;
+    margin: 0 auto;
+    background-image: none;
+  }
+
+  .page-header__button-head {
+    display: none;
+  }
+
+  .main-wrapper-head {
+    width: 100px;
+    margin-right: 170px;
+  }
+
+  .page-header__logo {
+    border: none;
+    background-color: transparent;
+  }
+
+  .page-header__main-image {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .page-header__pink-image {
+    position: relative;
+    width: 400px;
+    vertical-align: bottom;
+  }
+
+  .page-header__information {
+    padding: 30px 360px 60px;
+    background-image: none;
+  }
 }
