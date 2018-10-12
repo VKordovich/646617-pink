@@ -4,11 +4,12 @@
 .slider__toggle {
   font-size: 0;
   padding: 0;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background-color: #dadcdf;
   border-radius: 50%;
   border: none;
+  margin-right: 13px;
 }
 .slider__toggle svg {
   display: none;

@@ -13,7 +13,8 @@
   text-align: center;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 800;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .reviews__years {
   display: none;
@@ -24,7 +25,9 @@
   padding: 0 20px;
 }
 .reviews__toggles {
-  margin: 26px 0;
+  margin: 22px 0;
+  margin-bottom: 38px;
+  padding-left: 9px;
 }
 .review__angle {
   width: 320px;

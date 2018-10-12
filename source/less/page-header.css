@@ -3,7 +3,7 @@
   background-color: #274462;
   font-size: 18px;
   color: #ffffff;
-  font-family: "Open ans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 .main-wrapper-head {
   margin: 0 auto;
@@ -26,8 +26,8 @@
   border-top: 1px solid #485461;
 }
 .page-header__logo-head {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 21px;
+  margin-bottom: 16px;
 }
 .page-header__button-head {
   font-size: 0;
@@ -37,11 +37,11 @@
   background-size: contain;
   width: 24px;
   height: 24px;
-  margin-top: 21px;
+  margin-top: 20px;
   margin-left: auto;
 }
 .page-header__main-image {
-  min-height: 395px;
+  min-height: 394px;
   background-color: #274462;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;

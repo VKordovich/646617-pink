@@ -7,7 +7,7 @@
   display: none;
 }
 .pink-application__button-app {
-  margin-top: 28px;
+  margin-top: 27px;
 }
 .main-wrapper-app {
   margin: 0 auto;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 207px;
+  width: 205px;
   margin: auto;
   margin-top: 32px;
   align-items: flex-end;
@@ -38,14 +38,14 @@
 .pink-application__item--android {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
+  width: 46px;
+  height: 48px;
 }
 .pink-application__item--win {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
-  width: 44px;
-  height: 41px;
+  width: 45px;
+  height: 45px;
 }
 .pink-application__more-platforms {
   color: #ffffff;
@@ -53,6 +53,8 @@
   line-height: 24px;
   font-weight: 200;
   text-align: center;
+  margin-top: 22px;
+  margin-bottom: 29px;
 }
 @media (min-width: 768px) {
   .pink-application {
