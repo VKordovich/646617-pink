@@ -36,12 +36,21 @@
   bottom: -27px;
 }
 @media (min-width: 768px) {
+  .reviews {
+    font-size: 18px;
+    margin-top: 59px;
+  }
   .reviews__years {
     display: inline;
     order: 2;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 14px;
   }
   .reviews__name {
     order: 1;
+    font-size: 20px;
+    margin-top: 16px;
   }
   .reviews__quote {
     padding: 0 20px;
@@ -51,9 +60,9 @@
     flex-direction: column;
   }
   .review__angle {
-    width: 768px;
+    width: 660px;
     height: 60px;
-    bottom: -60px;
+    bottom: -56px;
   }
 }
 @media (min-width: 1200px) {

@@ -1402,7 +1402,7 @@
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 body {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 27px;
@@ -1426,11 +1426,11 @@ img {
 }
 @media (min-width: 768px) {
   body {
-    min-width: 768px;
+    width: 660px;
   }
 }
 @media (min-width: 1200px) {
   body {
-    min-width: 1200px;
+    width: 1200px;
   }
 }

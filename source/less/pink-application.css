@@ -51,18 +51,49 @@
   color: #ffffff;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 200;
+  font-weight: lighter;
   text-align: center;
   margin-top: 22px;
   margin-bottom: 29px;
 }
 @media (min-width: 768px) {
+  .main-wrapper-app {
+    width: 300px;
+  }
   .pink-application {
-    order: -1;
     background-color: transparent;
+    position: absolute;
+    top: 92px;
+    left: 20px;
   }
   .pink__title {
     display: block;
+    margin: 0;
+    font-size: 40px;
+    line-height: 47px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 0 33px;
+  }
+  .pink-application__button-app {
+    margin-top: 32px;
+  }
+  .pink-application__platforms {
+    margin-top: 45px;
+    width: 206px;
+  }
+  .pink-application__item--win {
+    height: 43px;
+  }
+  .pink-application__item--android {
+    width: 45px;
+    height: 49px;
+  }
+  .pink-application__more-platforms {
+    font-size: 18px;
+    margin-top: 37px;
+    margin-bottom: 29px;
   }
 }
 @media (min-width: 1200px) {

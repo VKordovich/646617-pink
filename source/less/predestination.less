@@ -86,8 +86,17 @@
     display: flex;
   }
 
+  .predestination__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
+
   .predestination__title--size {
-    padding: 0 210px;
+    padding: 0 90px;
+    margin-top: 0;
+    margin-bottom: 23px;
   }
 
   .predestination__angle {
@@ -97,29 +106,60 @@
   }
 
   .predestination__wrap {
-    padding-left: 300px;
+    padding-left: 309px;
     padding-bottom: 0;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: left;
+    background-position: left bottom;
     z-index: 1;
     box-sizing: border-box;
-    width: 728px;
+    width: 620px;
     margin: 0 auto;
     min-height: 486px;
+  }
+
+  .predestination__list {
+    margin-top: 83px;
+    margin-bottom: 43px;
+  }
+
+  .predestination__item-text,
+  .predestination__item-title {
+    margin: 0;
+    text-align: start;
+    padding: 0;
+  }
+
+  .predestination__item-title {
+    margin-bottom: 12px;
+  }
+
+  .predestination__item {
+    margin-bottom: 34px;
+  }
+
+  .predestination__item:nth-child(2) {
+    padding: 0 5px 0 0;
+  }
+
+  .predestination__item:nth-child(3) {
+    padding-left: 2px;
   }
 
   .predestination__research {
     order: 2;
     background-color: white;
     display: flex;
+    padding: 59px 20px 0 20px;
+    font-size: 14px;
+    line-height: 24px;
 
     &::before {
       content: "";
-      width: 300px;
-      min-height: 300px;
+      width: 239px;
+      min-height: 275px;
       display: block;
       font-size: 0;
-      margin-right: 65px;
+      margin-right: 70px;
       background-image: url("../img/icon-timer.svg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -128,6 +168,24 @@
 
   .research-wrap {
     width: 300px;
+  }
+
+  .predestination__research-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 37px;
+    margin-bottom: 0;
+  }
+
+  .predestination__research-text {
+    margin: 0;
+    margin-top: 10px;
+    text-align: start;
+    margin-bottom: 11px;
+  }
+
+  .predestination__research-link {
+    color: #d22856;
   }
 }
 
