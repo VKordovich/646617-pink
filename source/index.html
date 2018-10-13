@@ -33,14 +33,18 @@
             <a class="site-list__adress" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__list-item">
-            <a class="site-list__adress" href="https://htmlacademy.ru/">Html Academy</a>
+            <a class="site-list__adress" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="wrapper-head-img">
       <div class="page-header__main-image">
-        <img class="page-header__pink-image" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Взгляни на мир позитивно!">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../source/img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="../source/img/iphone-hand-tablet@1x.png">
+          <img class="page-header__pink-image" src="../source/img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Пинк»">
+        </picture>
       </div>
 
       <section class="pink-application">
@@ -58,7 +62,7 @@
               <a class="pink-application__item-img" href="#">Windows</a>
             </li>
           </ul>
-          <p class="pink-application__more-platforms">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows8</p>
+          <p class="pink-application__more-platforms">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
     </div>

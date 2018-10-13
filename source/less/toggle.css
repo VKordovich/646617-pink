@@ -31,21 +31,21 @@
     display: block;
   }
   .slider__toggle {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 310px;
     background-color: transparent;
     border-radius: 0;
     border: none;
   }
   .slider__toggle--left {
     position: absolute;
-    bottom: -160px;
-    left: 175px;
+    bottom: -250px;
+    left: 131px;
   }
   .slider__toggle--right {
     position: absolute;
-    bottom: -160px;
-    right: 175px;
+    bottom: -250px;
+    right: 50px;
   }
   .slider__toggle--center {
     display: none;

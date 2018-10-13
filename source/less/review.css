@@ -67,15 +67,27 @@
 }
 @media (min-width: 1200px) {
   .reviews__item {
-    width: 656px;
+    width: 820px;
     margin: auto;
+    margin-bottom: 30px;
   }
   .reviews {
     display: flex;
     flex-direction: column;
   }
+  .reviews__name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .reviews__years {
+    font-size: 18px;
+    line-height: 30px;
+  }
   .reviews__toggles {
     order: -1;
+    margin: 9px 0;
+    margin-bottom: 7px;
+    padding: 0;
   }
   .review__angle {
     width: 1200px;

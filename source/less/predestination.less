@@ -195,8 +195,44 @@
     display: flex;
   }
 
+  .predestination__title {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+
   .predestination__title--size {
-    padding: 0 426px;
+    padding: 0 350px;
+    margin-top: 5px;
+    line-height: 60px;
+    margin-bottom: 61px;
+  }
+
+  .predestination__item {
+    font-size: 18px;
+    line-height: 30px;
+    width: 313px;
+    padding: 0 41px 0 28px;
+    box-sizing: border-box;
+  }
+
+  .predestination__item:nth-child(2) {
+    padding: 0 40px;
+  }
+
+  .predestination__item:nth-child(3) {
+    padding: 0 32px 0 46px;
+  }
+
+  .predestination__item-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .predestination__item-text,
+  .predestination__item-title {
+    margin-bottom: 24px;
+    text-align: center;
+    margin-top: 1px;
   }
 
   .predestination__angle {
@@ -208,10 +244,12 @@
   .predestination__list {
     display: flex;
     order: 2;
+    margin-top: 106px;
+    margin-bottom: 0;
   }
 
   .predestination__wrap {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
     padding: 0;
     padding-top: 250px;
@@ -221,26 +259,45 @@
   }
 
   .predestination__research {
-    width: 1000px;
+    width: 940px;
     margin: auto;
     order: 2;
     background-color: @background-color;
     display: flex;
+    padding: 0;
+    margin-top: 9px;
+    margin-bottom: 67px;
 
     &::before {
       content: "";
-      width: 300px;
-      min-height: 300px;
+      width: 308px;
+      min-height: 344px;
       display: block;
       font-size: 0;
-      margin-right: 65px;
+      margin-right: 58px;
       background-image: url("../img/icon-timer.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 
+  .predestination__research-title {
+    margin-top: 55px;
+  }
+
+  .predestination__research-text {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+
+  .predestination__research-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .research-wrap {
-    width: 300px;
+    width: 540px;
   }
 }
