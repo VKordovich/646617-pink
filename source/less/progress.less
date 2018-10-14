@@ -22,7 +22,7 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 35px 14px;
+  padding: 38px 14px 43px;
   text-align: center;
 }
 
@@ -33,9 +33,31 @@
   color: @color;
   font-weight: 400;
   padding: 0 0 0 70px;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.progress__name:last-child {
+  margin-bottom: 47px;
+}
+
+.progress__name::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
 
 .progress__check-name {
   display: none;
+}
+
+.progress__check-name:checked + .progress__name::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }

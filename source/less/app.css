@@ -2,24 +2,23 @@
   border: none;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 0 20px;
   text-align: start;
+  padding: 0;
 }
-
 .app-wrapper {
   background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
 }
-
 .app__title {
   background-color: #f2f2f2;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 35px 14px;
+  padding: 38px 14px 39px;
   text-align: center;
 }
-
 .app__name {
   display: block;
   font-size: 18px;
@@ -27,9 +26,24 @@
   color: #283645;
   font-weight: 400;
   padding: 0 0 0 70px;
-  margin-bottom: 56px;
+  margin-bottom: 45px;
+  position: relative;
 }
-
+.app__name::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+.app__check-name:checked + .app__name::before {
+  background-color: #d22856;
+  box-shadow: 0 0 0 11px white inset;
+}
 .app__check-name {
   display: none;
 }

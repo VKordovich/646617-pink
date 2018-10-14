@@ -9,7 +9,7 @@
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 10px 14px;
+  padding: 34px 14px 10px;
 }
 .comment__fullpls {
   border: 2px solid #e5e5e5;
@@ -19,6 +19,6 @@
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  height: 218px;
-  padding: 20px;
+  min-height: 201px;
+  padding: 14px 18px;
 }
