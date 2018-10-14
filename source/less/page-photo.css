@@ -10,12 +10,16 @@
 .page-photo__text-top,
 .page-photo__text-bottom {
   margin: 0;
-  padding: 40px 15px;
+  padding: 46px 15px 49px;
   text-align: center;
+}
+.page-photo__text-bottom {
+  padding: 42px 19px 42px 15px;
 }
 .page-photo__item {
   margin: 0;
   width: 100%;
+  line-height: 24px;
 }
 .page-photo__author-picture {
   margin: 0;
@@ -51,6 +55,7 @@
 }
 .page-photo__wrap {
   margin-top: 20px;
+  line-height: 24px;
 }
 .page-photo__author-name {
   font-style: normal;
@@ -65,16 +70,20 @@
   margin: 0;
 }
 .page-photo__wrap-text {
-  padding: 20px 10px;
+  padding: 17px 18px;
 }
 .page-photo__likes {
   color: #d22856;
   margin: 0;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-size: 12px;
+  padding-left: 31px;
+  text-transform: uppercase;
 }
 .main-wrapper-photos {
   width: 280px;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .page-photo__author-picture {
