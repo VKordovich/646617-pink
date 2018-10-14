@@ -20,3 +20,11 @@
   height: 37px;
   margin-left: auto;
 }
+@media (min-width: 1200px) {
+  .copyright__name {
+    font-size: 18px;
+  }
+  .copyright {
+    width: 154px;
+  }
+}
