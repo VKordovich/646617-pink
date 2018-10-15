@@ -19,6 +19,15 @@
   height: 37px;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  .copyright__name {
+    padding-left: 10px;
+  }
+  .copyright__logo > svg {
+    width: 52px;
+    height: 40px;
+  }
+}
 @media (min-width: 1200px) {
   .copyright__name {
     font-size: 18px;

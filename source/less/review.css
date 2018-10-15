@@ -58,11 +58,16 @@
   .reviews__item {
     display: flex;
     flex-direction: column;
+    width: 660px;
+    margin: auto;
   }
   .review__angle {
     width: 660px;
     height: 60px;
     bottom: -56px;
+  }
+  .reviews__toggles {
+    margin-bottom: 19px;
   }
 }
 @media (min-width: 1200px) {

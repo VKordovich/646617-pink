@@ -86,18 +86,19 @@
   .page-header__main-image {
     background-image: none;
     background-color: transparent;
-    width: 620px;
     margin: 0 auto;
-    text-align: end;
-    padding-top: 100px;
+    text-align: center;
+    padding-top: 72px;
   }
   .page-header__pink-image {
     position: relative;
-    width: 400px;
+    width: 700px;
     vertical-align: bottom;
   }
   .page-header__information {
-    padding: 30px 240px 60px;
+    padding: 68px 167px 118px;
+    font-size: 50px;
+    line-height: 60px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }

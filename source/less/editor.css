@@ -51,7 +51,6 @@
 .editor__button {
   color: #dddfe0;
   border-color: #dddfe0;
-  margin: 11px 0 0;
 }
 .editor--set {
   color: #d22856;
@@ -68,29 +67,88 @@
   display: none;
 }
 @media (min-width: 768px) {
-  .editor {
+  .editor-main__wrapper {
     display: flex;
-    padding: 50px 20px;
+    padding: 38px 0 0;
+    width: 620px;
+    margin: auto;
   }
   .editor__uppload-photo {
-    width: 538px;
-    min-height: 464px;
+    width: 300px;
+    min-height: 453px;
     background-image: url("../img/photo-road-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 20px;
     background-position-x: center;
   }
+  .editor-wrapper {
+    width: 300px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .editor__range {
+    width: 275px;
+    height: 0;
+    background-color: transparent;
+    margin: 0;
+    padding-bottom: 34px;
+    padding-top: 19px;
+  }
+  .editor__range::before {
+    content: "";
+    background-color: #283645;
+    width: 202px;
+    height: 2px;
+    display: block;
+    margin-left: 55px;
+  }
   .editor__range--hidden {
     display: block;
+    padding-top: 37px;
+  }
+  .editor__point {
+    bottom: 27px;
+    right: 60px;
+  }
+  .editor__point--end {
+    bottom: 26px;
+    right: 181px;
+  }
+  .editor__point--center {
+    right: 110px;
+  }
+  .editor__item {
+    position: absolute;
+  }
+  .editor__item--cut {
+    top: -5px;
+    left: 26px;
+    width: 25px;
+  }
+  .editor__item--fill {
+    top: 70px;
+    left: 28px;
+    width: 25px;
+  }
+  .editor__item--cont {
+    top: 139px;
+    left: 25px;
+    width: 17px;
   }
   .editor-wrapper-tool {
     display: flex;
     flex-direction: row;
   }
   .editor__list-tool {
-    flex-direction: column;
     margin: 0;
+    width: 0;
+  }
+  .editor__wrap-button {
+    border: none;
+    padding-top: 45px;
+    text-align: start;
   }
 }
 @media (min-width: 1200px) {

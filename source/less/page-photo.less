@@ -108,38 +108,97 @@
 .main-wrapper-photos {
   width: 280px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.main-wrapper-photos--text {
+  background-color: white;
 }
 
 
 @media (min-width: 768px) {
   .page-photo__author-picture {
-    min-height: 354px;
+    min-height: 300px;
   }
 
   .page-photo__author-picture--panoram {
     background-image: url("../img/panorama-tablet@1x.jpg");
-    min-height: 559px;
+    min-height: 509px;
   }
 
   .main-wrapper-photos {
-    width: 354px;
+    width: 300px;
+  }
+
+  .main-wrapper-photos--text {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  .page-photo__text-top {
+    margin: 0;
+    padding: 93px 15px 75px;
+    text-align: center;
+  }
+
+  .page-photo__text-bottom {
+    width: 620px;
+    margin: auto;
+    padding: 62px 15px 69px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .page-photo__wrap-text {
+    padding: 23px 28px;
+    min-height: 156px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-photo__likes {
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    padding-right: 40px;
   }
 
   .main-wrapper-photos--panoram {
-    width: 728px;
+    width: 620px;
+  }
+
+  .page-photo__wrap-text--panoram {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 24px 28px;
+    min-height: auto;
+  }
+
+  .main-wrapper-photos--panoram .page-photo__likes {
+    order: -1;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 31px;
+    position: absolute;
+    top: 25px;
   }
 
   .wrapper-card {
-    width: 728px;
+    width: 620px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   .page-photo__wrap {
     margin-right: 20px;
     display: flex;
+    min-height: 456px;
   }
 
   .page-photo__wrap:nth-child(even) {

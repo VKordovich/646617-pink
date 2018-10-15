@@ -73,7 +73,7 @@
     margin-bottom: 0;
   }
   .predestination__title--size {
-    padding: 0 90px;
+    padding: 0 100px;
     margin-top: 0;
     margin-bottom: 23px;
   }
@@ -119,9 +119,10 @@
     order: 2;
     background-color: white;
     display: flex;
-    padding: 59px 20px 0 20px;
+    padding: 59px 74px 0;
     font-size: 14px;
     line-height: 24px;
+    text-align: center;
   }
   .predestination__research::before {
     content: "";
@@ -136,6 +137,7 @@
   }
   .research-wrap {
     width: 300px;
+    text-align: start;
   }
   .predestination__research-title {
     font-size: 30px;

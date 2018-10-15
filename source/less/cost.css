@@ -54,12 +54,13 @@
 @media (min-width: 768px) {
   .main-wrapper-cost {
     width: 660px;
+    margin: auto;
   }
   .cost__rate-table {
     width: 620px;
     margin: 0 auto;
     margin-bottom: 70px;
-    margin-top: 65px;
+    margin-top: 84px;
     transform: translateX(0);
   }
   .cost__money {
