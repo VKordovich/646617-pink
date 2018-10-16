@@ -1,8 +1,9 @@
 .comment {
   border: none;
-  margin: 0;
   padding: 0;
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
 }
 .comment__title {
   font-size: 14px;
@@ -21,4 +22,22 @@
   box-sizing: border-box;
   min-height: 201px;
   padding: 14px 18px;
+}
+@media (min-width: 768px) {
+  .comment {
+    border: 2px solid #e5e5e5;
+    margin-top: 51px;
+    width: 620px;
+    box-sizing: border-box;
+  }
+  .comment__title {
+    padding: 0 38px;
+  }
+  .comment__fullpls {
+    border: 2px solid #e5e5e5;
+    width: 500px;
+    margin-top: 31px;
+    min-height: 193px;
+    margin-bottom: 44px;
+  }
 }

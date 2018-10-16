@@ -96,10 +96,13 @@
     vertical-align: bottom;
   }
   .page-header__information {
-    padding: 68px 167px 118px;
+    padding: 68px 138px 118px;
     font-size: 50px;
     line-height: 60px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .page-header__information--form {
+    padding: 68px 138px 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -107,6 +110,7 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .wrapper-navigation {
     display: flex;
@@ -144,7 +148,9 @@
     position: static;
   }
   .page-header__information {
-    padding: 30px 360px 60px;
+    padding: 66px 0 78px;
     background-image: none;
+    width: 645px;
+    margin: 0 auto;
   }
 }

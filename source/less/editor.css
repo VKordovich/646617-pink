@@ -95,6 +95,7 @@
     margin: 0;
     padding-bottom: 34px;
     padding-top: 19px;
+    border-bottom: 1px solid #dddfe0;
   }
   .editor__range::before {
     content: "";
@@ -106,7 +107,10 @@
   }
   .editor__range--hidden {
     display: block;
-    padding-top: 37px;
+    padding-top: 38px;
+  }
+  .editor__range--hidden:last-child {
+    padding-top: 35px;
   }
   .editor__point {
     bottom: 27px;
@@ -147,22 +151,77 @@
   }
   .editor__wrap-button {
     border: none;
-    padding-top: 45px;
+    padding-top: 43px;
     text-align: start;
   }
 }
 @media (min-width: 1200px) {
   .editor {
-    width: 1000px;
+    width: 940px;
     margin: auto;
-    padding: 50px 0;
+    padding: 52px 0;
+    padding-bottom: 6px;
+  }
+  .editor-main__wrapper {
+    padding: 0;
+    width: 800px;
   }
   .editor__uppload-photo {
-    width: 347px;
-    min-height: 464px;
     background-image: url("../img/photo-road-desktop@1x.jpg");
-    margin-right: 14px;
-    margin-left: 50px;
-    background-position-x: center;
+    margin: 0;
+    margin-right: 60px;
+    margin-left: 10px;
+  }
+  .editor-wrapper {
+    width: 410px;
+  }
+  .editor__item--cut {
+    top: -2px;
+    left: 28px;
+    width: 49px;
+  }
+  .editor__item--fill {
+    top: 73px;
+    left: 31px;
+    width: 49px;
+  }
+  .editor__item--cont {
+    top: 142px;
+    left: 29px;
+    width: 38px;
+  }
+  .editor__range {
+    width: 385px;
+    padding-top: 20px;
+  }
+  .editor__range--hidden {
+    display: block;
+    padding-top: 38px;
+  }
+  .editor__range::before {
+    width: 288px;
+    margin-left: 98px;
+  }
+  .editor__point {
+    bottom: 26px;
+    right: 203px;
+  }
+  .editor__point--end {
+    bottom: 26px;
+    right: 26px;
+  }
+  .editor__point--center {
+    right: 114px;
+  }
+  .editor__wrap-button {
+    width: 417px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .editor__button {
+    width: 183px;
+    font-size: 18px;
+    margin: 107px 0 0 5px;
+    padding: 13px 10px 17px 15px;
   }
 }

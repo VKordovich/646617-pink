@@ -2,6 +2,10 @@
   border: none;
   margin: 0;
   padding: 0;
+  width: 280px;
+}
+.contact__title {
+  display: none;
 }
 .contact__name {
   font-size: 14px;
@@ -20,4 +24,49 @@
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  .contact {
+    width: 620px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+  }
+  .contact__title {
+    display: table;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    padding: 0 28px;
+    text-align: center;
+  }
+  .contact__input-name {
+    width: 500px;
+    padding: 18px 60px 21px 18px;
+    margin-bottom: 10px;
+  }
+  .contact__name {
+    padding: 0 35px 0 19px;
+    margin-bottom: 26px;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 2px;
+  }
+  .contact__name:nth-of-type(1) {
+    order: 2;
+  }
+  .contact__name:nth-of-type(2) {
+    order: 4;
+  }
+  .contact__input-name:nth-of-type(1) {
+    order: 1;
+  }
+  .contact__input-name:nth-of-type(2) {
+    order: 3;
+  }
 }

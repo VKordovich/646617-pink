@@ -26,7 +26,6 @@
 }
 .page-form__contact {
   order: 2;
-  width: 280px;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 25px;
@@ -67,15 +66,17 @@
 }
 .page-form__comment {
   order: 4;
-  width: 280px;
-  margin: 0 auto;
+}
+.page-form__text-pls {
+  display: none;
 }
 @media (min-width: 768px) {
   .page-form__text {
-    padding: 50px 167px;
+    padding: 92px 115px 65px;
+    font-size: 18px;
   }
   .page-form__main-form {
-    width: 728px;
+    width: 620px;
     margin: auto;
   }
   .page-form__app {
@@ -83,6 +84,28 @@
   }
   .page-form__contact {
     order: 0;
+    margin-top: 56px;
+  }
+  .page-form__text-pls {
+    display: inline;
+  }
+  .page-form__form-name {
+    width: auto;
+    margin-bottom: 15px;
+  }
+  .wrapper-form__button {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    margin-bottom: 51px;
+  }
+  .page-form__note {
+    margin-top: 58px;
+  }
+  .page-form__button {
+    width: 300px;
+    padding: 18px 30px;
   }
 }
 @media (min-width: 1200px) {

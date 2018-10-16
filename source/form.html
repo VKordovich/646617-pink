@@ -38,7 +38,7 @@
           </ul>
         </nav>
       </div>
-      <p class="page-header__information">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <p class="page-header__information page-header__information--form">Конкурс на самое безбашенное путешествие с Пинк</p>
 
     </header>
 
@@ -46,7 +46,7 @@
 
     <h1 class="visually-hidden">Основная форма</h1>
     <p class="page-form__text">Поделитесь своей историей и получите шанс выйграть ценный приз &mdash; 1000 миль на вашу
-      бонусную карту!</p>
+      бонусную карту!<span class="page-form__text-pls">Пожалуйста, заполните форму ниже:</span></p>
     <form class="page-form__main-form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="form-name page-form__form-name">
         <label class="form-name__name" for="lastName">Фамилия:</label>
@@ -60,8 +60,8 @@
       </fieldset>
 
       <fieldset class="app page-form__app">
-        <div class="app-wrapper">
           <legend class="app__title">С каким приложением путешествовали?</legend>
+        <div class="app-wrapper">
           <input class="app__check-name" type="radio" id="ios" name="ios" checked>
           <label class="app__name" for="ios">Pink для iOS</label>
 
@@ -74,15 +74,18 @@
       </fieldset>
 
       <fieldset class="contact page-form__contact">
+         <legend class="contact__title">Контактная информация</legend>
+         <div class="contact-wrapper">
         <label class="contact__name" for="number">Номер телефона</label>
         <input class="contact__input-name" type="text" id="number" name="Phone number" placeholder="Номер, пожалуйста">
         <label class="contact__name" for="email">Адрес почты</label>
         <input class="contact__input-name" type="text" id="email" name="email" placeholder="Введите почту *">
+      </div>
       </fieldset>
 
       <fieldset class="progress page-form__progress">
-        <div class="progress-wrapper">
           <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+        <div class="progress-wrapper">
           <input class="progress__check-name" type="checkbox" id="self" name="self" checked>
           <label class="progress__name" for="self">Сделал селфи с акулой</label>
 

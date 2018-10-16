@@ -44,26 +44,30 @@
   }
 }
 @media (min-width: 1200px) {
+  .footer {
+    min-height: 197px;
+    margin-top: 28px;
+  }
   .main-wrapper-body {
     width: 940px;
     min-height: inherit;
   }
   .footer__logo-pink {
-    margin-right: 198px;
-    width: 178px;
     display: flex;
     padding: 0;
     padding-bottom: 16px;
+    margin: auto 0;
+    margin-right: 234px;
   }
   .footer__social-pink {
     display: flex;
-    margin-top: 0;
-    padding-top: 72px;
-    width: 198px;
+    padding: 0;
+    margin: auto 0;
   }
   .footer__copyright-pink {
-    width: 154px;
+    width: 164px;
+    padding: 0;
+    margin: auto 0;
     margin-left: auto;
-    padding-top: 34px;
   }
 }

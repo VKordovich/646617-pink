@@ -2,11 +2,13 @@
   border: none;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   text-align: start;
 }
 .progress-wrapper {
   background-color: #f2f2f2;
+  width: 280px;
+  margin: auto;
 }
 .progress__title {
   background-color: #f2f2f2;
@@ -14,7 +16,7 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 38px 14px 43px;
+  padding: 38px 35px 43px;
   text-align: center;
 }
 .progress__name {
@@ -47,4 +49,22 @@
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+}
+@media (min-width: 768px) {
+  .progress {
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    margin-top: 32px;
+  }
+  .progress__title {
+    background-color: white;
+    padding: 0 31px;
+  }
+  .progress-wrapper {
+    background-color: white;
+    margin: 48px 0 53px 58px;
+  }
+  .progress__name {
+    padding: 0 0 0 59px;
+  }
 }
