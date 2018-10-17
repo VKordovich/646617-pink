@@ -1,6 +1,6 @@
 .page-header {
   padding: 0;
-  background-color: #274462;
+  background-color: #283645;
   font-size: 18px;
   color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -21,7 +21,7 @@
   display: flex;
 }
 .page-header__logo {
-  background-color: #274462;
+  background-color: #283645;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 }
@@ -42,7 +42,7 @@
 }
 .page-header__main-image {
   min-height: 394px;
-  background-color: #274462;
+  background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   position: relative;
@@ -148,9 +148,14 @@
     position: static;
   }
   .page-header__information {
-    padding: 66px 0 78px;
+    padding: 66px 151px 100px;
     background-image: none;
-    width: 645px;
+    width: 940px;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .page-header__information--form {
+    width: 760px;
+    padding: 66px 0 100px;
   }
 }

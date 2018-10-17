@@ -7,7 +7,7 @@
   display: none;
 }
 .pink-application__button-app {
-  margin-top: 27px;
+  margin-top: 28px;
 }
 .main-wrapper-app {
   margin: 0 auto;
@@ -78,6 +78,8 @@
   }
   .pink-application__button-app {
     margin-top: 32px;
+    padding: 16px 24px;
+    width: 300px;
   }
   .pink-application__platforms {
     margin-top: 45px;
@@ -108,7 +110,7 @@
     padding: 0 30px;
   }
   .pink-application__button-app {
-    margin-top: 50px;
+    margin-top: 49px;
   }
   .pink-application__platforms {
     margin-top: 69px;

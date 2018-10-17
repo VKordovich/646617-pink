@@ -154,6 +154,9 @@
   .predestination__research-link {
     color: #d22856;
   }
+  .predestination__research-text br {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .predestination {
@@ -252,5 +255,8 @@
   }
   .research-wrap {
     width: 540px;
+  }
+  .predestination__research-text br {
+    display: inline;
   }
 }
