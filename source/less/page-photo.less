@@ -29,6 +29,7 @@
   margin: 0;
   width: 100%;
   line-height: 24px;
+  position: relative;
 }
 
 .page-photo__author-picture {
@@ -113,6 +114,23 @@
 
 .main-wrapper-photos--text {
   background-color: white;
+}
+
+.page-photo__item--panoram::before {
+  content: "Панорама дня";
+  text-transform: uppercase;
+  background-color: #d22856;
+  text-align: center;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  right: 6%;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
 }
 
 
@@ -228,11 +246,27 @@
   .page-photo__author-picture--wing {
     background-image: url("../img/photo-wing-tablet@1x.jpg");
   }
+
+  .page-photo__item {
+    position: relative;
+  }
+
+  .page-photo__item--panoram::before {
+    content: "Панорама дня";
+    top: 57px;
+    right: 10%;
+  }
 }
 
 @media (min-width: 1200px) {
   .page-photo__author-picture {
     min-height: 400px;
+  }
+
+  .page-photo__item--panoram::before {
+    content: "Панорама дня";
+    top: 55px;
+    right: 11%;
   }
 
   .main-wrapper-photos--text {

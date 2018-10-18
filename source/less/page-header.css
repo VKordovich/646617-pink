@@ -123,8 +123,9 @@
     width: 621px;
   }
   .wrapper-head-img {
-    width: 100%;
+    width: 1200px;
     background-image: none;
+    margin: auto;
   }
   .page-header__button-head {
     display: none;
