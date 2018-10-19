@@ -23,7 +23,7 @@
   min-height: 201px;
   padding: 14px 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .comment {
     border: 2px solid #e5e5e5;
     margin-top: 51px;

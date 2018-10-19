@@ -215,6 +215,12 @@
   font-weight: bold;
   vertical-align: middle;
 }
+.site-list__adress:hover {
+  color: #d22856;
+}
+.site-list__adress:active {
+  color: rgba(210, 40, 86, 0.3);
+}
 @media (min-width: 1200px) {
   .site-list {
     display: flex;
@@ -230,6 +236,15 @@
     background-color: transparent;
     padding-top: 37px;
     padding-bottom: 37px;
+  }
+  .site-list__adress:hover {
+    color: #d22856;
+  }
+  .site-list__adress:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .site-list__adress--active {
+    border-bottom: 2px solid #ffffff;
   }
 }
 .page-main {
@@ -295,6 +310,14 @@
   text-align: center;
   margin-top: 22px;
   margin-bottom: 29px;
+}
+.pink-application__button-app:hover {
+  background-color: white;
+  color: #d22856;
+}
+.pink-application__button-app:active {
+  background-color: white;
+  color: rgba(210, 40, 86, 0.3);
 }
 @media (min-width: 768px) {
   .main-wrapper-app {
@@ -867,6 +890,12 @@
   box-sizing: border-box;
   margin-bottom: 17px;
 }
+.form-name__input-name:hover {
+  border: 2px solid #283645;
+}
+.form-name__input-name:active {
+  border: 2px solid #d22856;
+}
 @media (min-width: 768px) {
   .form-name__input-name {
     width: 524px;
@@ -939,10 +968,16 @@
   width: 36px;
   height: 36px;
   background-color: white;
-  border: 1px solid #e5e5e5;
+  border: 1px solid white;
   position: absolute;
   bottom: -4px;
   left: 0;
+}
+.progress__name:hover::before {
+  border: 1px solid #283645;
+}
+.progress__name:active::before {
+  border: 1px solid #d22856;
 }
 .progress__check-name {
   display: none;
@@ -1029,6 +1064,12 @@
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 17px;
+}
+.contact__input-name:hover {
+  border: 2px solid #283645;
+}
+.contact__input-name:active {
+  border: 2px solid #d22856;
 }
 @media (min-width: 768px) {
   .contact {
@@ -1144,7 +1185,7 @@
   width: 36px;
   height: 36px;
   background-color: white;
-  border: 1px solid #e5e5e5;
+  border: 2px solid white;
   border-radius: 50%;
   position: absolute;
   bottom: -4px;
@@ -1153,6 +1194,13 @@
 .app__check-name:checked + .app__name::before {
   background-color: #d22856;
   box-shadow: 0 0 0 11px white inset;
+}
+.app__name:hover::before {
+  border: 2px solid #283645;
+}
+.app__check-name:checked + .app__name:active::before {
+  border: 2px solid #d22856;
+  background-color: white;
 }
 .app__check-name {
   display: none;
@@ -1280,6 +1328,13 @@
   margin-top: 41px;
   padding: 19px 30px;
   text-transform: uppercase;
+}
+.page-form__button:hover {
+  background-color: #1c9b5e;
+  border-color: #1c9b5e;
+}
+.page-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .page-form__note {
   text-transform: uppercase;
@@ -1526,10 +1581,13 @@
 }
 .social__item {
   margin-right: 11px;
-  border: 3px solid #e9ebec;
+  border: 3px solid white;
   border-radius: 50%;
   width: 46px;
   height: 46px;
+}
+.social__item:hover {
+  border: 3px solid #283645;
 }
 .social__name {
   display: none;
@@ -1873,12 +1931,34 @@
   right: 35px;
   background-color: #f2f2f2;
 }
+.editor__point:active {
+  background-color: #d22856;
+}
 .editor__button {
-  color: #dddfe0;
   border-color: #dddfe0;
+  color: rgba(40, 54, 69, 0.1);
+}
+.editor__button:hover {
+  border-color: #b5b9be;
+  color: rgba(40, 54, 69, 0.3);
+}
+.editor__button:active {
+  background-color: #b5b9be;
+  border-color: #b5b9be;
+  color: rgba(255, 255, 255, 0.3);
 }
 .editor--set {
   color: #d22856;
+  border-color: #d22856;
+}
+.editor--set:hover {
+  background-color: #d22856;
+  color: white;
+  border-color: #d22856;
+}
+.editor--set:active {
+  background-color: #d22856;
+  color: rgba(255, 255, 255, 0.3);
   border-color: #d22856;
 }
 .editor__wrap-button {
@@ -2063,6 +2143,12 @@
   border: none;
   margin-right: 13px;
 }
+.slider__toggle:hover {
+  background-color: #7e868f;
+}
+.slider__toggle:active {
+  background-color: white;
+}
 .slider__toggle svg {
   display: none;
 }
@@ -2135,10 +2221,17 @@
   line-height: 29px;
 }
 .page-footer__type-contact {
-  display: block;
+  display: inline-block;
   font-size: 24px;
   font-weight: 200;
   color: #d22856;
+}
+.page-footer__type-contact:hover {
+  color: #283645;
+  border-bottom: 2px solid #283645;
+}
+.page-footer__type-contact:active {
+  color: rgba(40, 54, 69, 0.3);
 }
 .page-footer__item {
   margin-bottom: 19px;
@@ -2207,7 +2300,7 @@
   .page-footer__item {
     margin-right: 38px;
     width: 280px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
   .page-footer__item:last-child {
     margin-bottom: 0;
@@ -2294,6 +2387,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* stylelint-disable */
 html {
   line-height: 1.15;
   /* 1 */
@@ -2627,7 +2721,7 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   body {
     min-width: 660px;
   }

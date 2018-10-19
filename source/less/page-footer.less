@@ -28,7 +28,7 @@
 .page-footer__contacts-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding: 0;
   text-align: center;
   font-size: 18px;
@@ -36,7 +36,7 @@
 }
 
 .page-footer__select-contact {
-  line-height: 29px;
+  line-height: 27px;
 }
 
 .page-footer__type-contact {
@@ -44,6 +44,7 @@
   font-size: @font-size-footer;
   font-weight: 200;
   color: @color-footer;
+  line-height: 29px;
 }
 
 .page-footer__type-contact:hover {
@@ -56,7 +57,11 @@
 }
 
 .page-footer__item {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
+}
+
+.page-footer__item--center {
+  padding-left: 3px;
 }
 
 .page-footer__map {
@@ -75,6 +80,18 @@
 .main-wrapper-footer {
   width: 280px;
   margin: 0 auto;
+}
+
+.main-wrapper-footer::before {
+  content: "";
+  width: 16px;
+  background-color: @color-footer;
+  height: 16px;
+  box-shadow: 0 0 0 9px white;
+  border-radius: 50%;
+  position: absolute;
+  top: 515px;
+  left: 152px;
 }
 
 .page-footer__main {
@@ -96,7 +113,7 @@
   fill: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .main-wrapper-footer {
     width: 100%;
     margin: 0;
@@ -110,7 +127,8 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 26px;
+    background-position-y: 18px;
+    background-position-x: -40px;
   }
 
   .page-footer__text {
@@ -133,11 +151,19 @@
   .page-footer__item {
     margin-right: 38px;
     width: 280px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+  }
+
+  .page-footer__select-contact {
+    line-height: 28px;
+  }
+
+  .page-footer__type-contact {
+    line-height: 33px;
   }
 
   .page-footer__item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .page-footer__item--center {
@@ -146,7 +172,7 @@
 
   .page-footer__triangle-img {
     width: 100%;
-    top: 385px;
+    top: 391px;
     height: 100px;
   }
 
@@ -165,6 +191,11 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+
+  .main-wrapper-footer::before {
+    top: 609px;
+    left: 322px;
   }
 }
 
@@ -201,22 +232,27 @@
     margin-right: 0;
     width: 290px;
     box-sizing: border-box;
-    margin-top: 13px;
+    margin-top: 16px;
+  }
+
+  .page-footer__select-contact {
+    line-height: 25px;
   }
 
   .page-footer__type-contact {
-    margin-top: 21px;
+    margin-top: 22px;
+    line-height: 30px;
   }
 
   .page-footer__item--center {
     margin: 0 30px;
-    margin-top: 13px;
+    margin-top: 14px;
   }
 
   .page-footer__item--position {
     order: 1;
     margin: 0;
-    margin-top: 13px;
+    margin-top: 16px;
   }
 
   .page-footer {
@@ -228,5 +264,10 @@
   .page-footer__main {
     width: 100%;
     min-height: 197px;
+  }
+
+  .main-wrapper-footer::before {
+    top: 640px;
+    left: 591px;
   }
 }

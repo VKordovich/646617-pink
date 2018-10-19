@@ -64,7 +64,7 @@
   background-color: white;
   color: rgba(210, 40, 86, 0.3);
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .main-wrapper-app {
     width: 300px;
   }
@@ -72,7 +72,7 @@
     background-color: transparent;
     position: absolute;
     top: 92px;
-    left: 74px;
+    left: 3%;
   }
   .pink__title {
     display: block;
