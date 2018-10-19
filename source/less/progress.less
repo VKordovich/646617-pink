@@ -8,12 +8,14 @@
   border: none;
   background-color: @progress-background;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   text-align: start;
 }
 
 .progress-wrapper {
   background-color: @progress-background;
+  width: 280px;
+  margin: auto;
 }
 
 .progress__title {
@@ -22,7 +24,7 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  padding: 35px 14px;
+  padding: 38px 35px 43px;
   text-align: center;
 }
 
@@ -33,9 +35,101 @@
   color: @color;
   font-weight: 400;
   padding: 0 0 0 70px;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.progress__name:last-child {
+  margin-bottom: 47px;
+}
+
+.progress__name::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid white;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.progress__name:hover::before {
+  border: 1px solid #283645;
+}
+
+.progress__name:active::before {
+  border: 1px solid #d22856;
 }
 
 .progress__check-name {
   display: none;
+}
+
+.progress__check-name:checked + .progress__name::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@media (min-width: 660px) {
+  .progress {
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    margin-top: 32px;
+  }
+
+  .progress__title {
+    background-color: white;
+    padding: 0 31px;
+  }
+
+  .progress-wrapper {
+    background-color: white;
+    margin: 48px 0 53px 58px;
+  }
+
+  .progress__name {
+    padding: 0 0 0 59px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .progress-wrapper {
+    width: 820px;
+    margin: 48px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+  }
+
+  .progress__name {
+    padding: 0 0 0 59px;
+    width: 260px;
+    box-sizing: border-box;
+  }
+
+  .progress__name:nth-of-type(odd) {
+    order: -1;
+  }
+
+  .progress__name:nth-of-type(3),
+  .progress__name:nth-of-type(4), {
+    margin-right: 35px;
+  }
+
+  .progress__name:nth-of-type(1),
+  .progress__name:nth-of-type(2), {
+    margin-right: 55px;
+  }
+
+  .progress__name:nth-of-type(6),
+  .progress__name:nth-of-type(5), {
+    width: 209px;
+  }
+
+  .progress__name:last-child {
+    margin-bottom: 52px;
+  }
 }

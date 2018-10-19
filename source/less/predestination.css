@@ -19,24 +19,36 @@
   line-height: 30px;
   font-weight: 100;
   text-align: center;
+  margin-top: 25px;
+}
+.predestination__title--size {
+  padding-top: 1px;
 }
 .predestination__list {
   list-style: none;
   margin: 0;
-  margin-top: 60px;
+  margin-top: 74px;
   padding: 0;
   background-color: #f2f2f2;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 .predestination__item {
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 .predestination__item-text {
-  padding: 0 10px;
+  padding: 0 20px;
+  margin-top: 12px;
+  margin-bottom: 31px;
+}
+.predestination__item-title {
+  font-size: 18px;
+  margin-bottom: 0;
 }
 .predestination__wrap {
-  padding-bottom: 304px;
-  background-position: bottom;
+  padding-bottom: 287px;
+  background-position: 50% 111%;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-screen-mobile@1x.png");
 }
@@ -49,48 +61,101 @@
 .predestination__color {
   fill: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .predestination {
     flex-direction: column;
     display: flex;
   }
+  .predestination__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
   .predestination__title--size {
-    padding: 0 210px;
+    padding: 0 100px;
+    margin-top: 0;
+    margin-bottom: 23px;
   }
   .predestination__angle {
-    width: 768px;
+    width: 660px;
     height: 60px;
-    bottom: -60px;
+    bottom: -55px;
   }
   .predestination__wrap {
-    padding-left: 300px;
+    padding-left: 309px;
     padding-bottom: 0;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: left;
+    background-position: left bottom;
     z-index: 1;
     box-sizing: border-box;
-    width: 728px;
+    width: 620px;
     margin: 0 auto;
     min-height: 486px;
+  }
+  .predestination__list {
+    margin-top: 83px;
+    margin-bottom: 43px;
+  }
+  .predestination__item-text,
+  .predestination__item-title {
+    margin: 0;
+    text-align: start;
+    padding: 0;
+  }
+  .predestination__item-title {
+    margin-bottom: 12px;
+  }
+  .predestination__item {
+    margin-bottom: 34px;
+  }
+  .predestination__item:nth-child(2) {
+    padding: 0 5px 0 0;
+  }
+  .predestination__item:nth-child(3) {
+    padding-left: 2px;
   }
   .predestination__research {
     order: 2;
     background-color: white;
     display: flex;
+    padding: 59px 20px 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
   }
   .predestination__research::before {
     content: "";
-    width: 300px;
-    min-height: 300px;
+    width: 239px;
+    min-height: 275px;
     display: block;
     font-size: 0;
-    margin-right: 65px;
+    margin-right: 70px;
     background-image: url("../img/icon-timer.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
   .research-wrap {
     width: 300px;
+    text-align: start;
+  }
+  .predestination__research-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 37px;
+    margin-bottom: 0;
+  }
+  .predestination__research-text {
+    margin: 0;
+    margin-top: 10px;
+    text-align: start;
+    margin-bottom: 11px;
+  }
+  .predestination__research-link {
+    color: #d22856;
+  }
+  .predestination__research-text br {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -98,8 +163,38 @@
     flex-direction: column;
     display: flex;
   }
+  .predestination__title {
+    font-size: 50px;
+    margin-top: 60px;
+  }
   .predestination__title--size {
-    padding: 0 426px;
+    padding: 0 350px;
+    margin-top: 5px;
+    line-height: 60px;
+    margin-bottom: 61px;
+  }
+  .predestination__item {
+    font-size: 18px;
+    line-height: 30px;
+    width: 313px;
+    padding: 0 41px 0 28px;
+    box-sizing: border-box;
+  }
+  .predestination__item:nth-child(2) {
+    padding: 0 40px;
+  }
+  .predestination__item:nth-child(3) {
+    padding: 0 32px 0 46px;
+  }
+  .predestination__item-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .predestination__item-text,
+  .predestination__item-title {
+    margin-bottom: 24px;
+    text-align: center;
+    margin-top: 1px;
   }
   .predestination__angle {
     width: 1200px;
@@ -109,9 +204,11 @@
   .predestination__list {
     display: flex;
     order: 2;
+    margin-top: 106px;
+    margin-bottom: 0;
   }
   .predestination__wrap {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
     padding: 0;
     padding-top: 250px;
@@ -120,24 +217,46 @@
     background-position-x: right, center, left;
   }
   .predestination__research {
-    width: 1000px;
+    width: 940px;
     margin: auto;
     order: 2;
     background-color: #f2f2f2;
     display: flex;
+    padding: 0;
+    margin-top: 9px;
+    margin-bottom: 67px;
   }
   .predestination__research::before {
     content: "";
-    width: 300px;
-    min-height: 300px;
+    width: 308px;
+    min-height: 344px;
     display: block;
     font-size: 0;
-    margin-right: 65px;
+    margin-right: 58px;
     background-image: url("../img/icon-timer.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .predestination__research-title {
+    margin-top: 90px;
+  }
+  .predestination__research-title br {
+    display: none;
+  }
+  .predestination__research-text {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+  .predestination__research-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
   .research-wrap {
-    width: 300px;
+    width: 540px;
+  }
+  .predestination__research-text br {
+    display: inline;
   }
 }

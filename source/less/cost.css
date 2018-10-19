@@ -4,20 +4,22 @@
 }
 .cost__rate-table {
   border-collapse: collapse;
-  margin-top: 90px;
+  margin-top: 88px;
   font-family: "Open Sans", "Arial", sans-serif;
+  transform: translateX(-257px);
+  table-layout: fixed;
 }
 .cost__table-head,
 .cost__table-date {
   border: 1px solid #e5e5e5;
-  width: 280px;
+  width: 139px;
 }
 .cost__table-head {
   background-color: #283645;
   color: white;
   font-size: 18px;
   line-height: 30px;
-  padding: 20px 67px;
+  padding: 17px 69px;
   text-transform: uppercase;
 }
 .cost__hit {
@@ -31,31 +33,44 @@
   background-color: white;
   color: black;
   font-weight: 400;
-  padding: 20px 20px 20px 17px;
+  padding: 15px 71px 15px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .main-wrapper-cost {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   overflow: hidden;
 }
 .cost__cell-hidden,
 .cost__table-empty {
   display: none;
 }
-@media (min-width: 768px) {
+.cost__toggles {
+  padding-left: 14px;
+  margin-top: 26px;
+  margin-bottom: 46px;
+}
+@media (min-width: 660px) {
   .main-wrapper-cost {
-    width: 728px;
+    width: 660px;
+    margin: auto;
   }
   .cost__rate-table {
-    width: 728px;
-    margin-bottom: 50px;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 84px;
+    transform: translateX(0);
   }
   .cost__money {
     display: block;
+    font-size: 18px;
   }
   .cost__table-head {
-    padding: 20px 18px;
-    width: 320px;
+    padding: 11px 18px 8px;
+    width: 100px;
+    font-size: 16px;
   }
   .cost__toggles {
     display: none;
@@ -65,19 +80,46 @@
   }
   .cost__table-empty {
     display: table-cell;
+    width: 135px;
   }
   .cost__cell-hidden {
     background-color: white;
     color: black;
-    font-weight: 400;
-    padding: 20px 20px 20px 17px;
+    font-weight: normal;
+    padding: 8px 20px 10px 14px;
     border: 1px solid #e5e5e5;
     width: 320px;
     display: table-cell;
+    font-size: 14px;
   }
   .cost__table-date {
     background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+@media (min-width: 1200px) {
+  .main-wrapper-cost {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+  .cost__rate-table {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    margin-top: 154px;
+  }
+  .cost__table-head {
+    padding: 17px 18px 21px;
+    width: 100px;
+    font-size: 18px;
+  }
+  .cost__money {
+    font-size: 24px;
+  }
+  .cost__cell-hidden {
+    padding: 16px 20px 17px 21px;
+    font-size: 18px;
   }
 }

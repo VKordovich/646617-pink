@@ -14,26 +14,34 @@
 
 .editor__list-tool {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 213px;
 }
 
 .editor__item {
-  margin-right: 5px;
+  margin-right: 32px;
+  display: flex;
+}
+
+.editor__item:nth-child(3) {
+  display: flex;
+  padding-top: 7px;
+  padding-left: 8px;
+  margin: 0;
 }
 
 .editor__range {
-  width: 242px;
+  width: 240px;
   height: 2px;
   background-color: #283645;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 36px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .editor__point {
@@ -47,10 +55,24 @@
   background-color: #f2f2f2;
 }
 
+.editor__point:active {
+  background-color: #d22856;
+}
+
 .editor__button {
-  color: #dddfe0;
   border-color: #dddfe0;
-  margin: 6px;
+  color: rgba(40, 54, 69, 0.1);
+}
+
+.editor__button:hover {
+  border-color: #b5b9be;
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.editor__button:active {
+  background-color: #b5b9be;
+  border-color: #b5b9be;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .editor--set {
@@ -58,24 +80,41 @@
   border-color: #d22856;
 }
 
+.editor--set:hover {
+  background-color: #d22856;
+  color: white;
+  border-color: #d22856;
+}
+
+.editor--set:active {
+  background-color: #d22856;
+  color: rgba(255, 255, 255, 0.3);
+  border-color: #d22856;
+}
+
 .editor__wrap-button {
-  padding: 40px 0;
+  width: 280px;
+  margin: 0 auto;
   border-top: 2px solid #dddfe0;
+  padding-top: 25px;
+  padding-bottom: 41px;
 }
 
 .editor__range--hidden {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .editor {
+@media (min-width: 660px) {
+  .editor-main__wrapper {
     display: flex;
-    padding: 50px 20px;
+    padding: 38px 0 0;
+    width: 620px;
+    margin: auto;
   }
 
   .editor__uppload-photo {
-    width: 538px;
-    min-height: 464px;
+    width: 300px;
+    min-height: 453px;
     background-image: url("../img/photo-road-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,8 +122,75 @@
     background-position-x: center;
   }
 
+  .editor-wrapper {
+    width: 300px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .editor__range {
+    width: 275px;
+    height: 0;
+    background-color: transparent;
+    margin: 0;
+    padding-bottom: 34px;
+    padding-top: 19px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .editor__range::before {
+    content: "";
+    background-color: #283645;
+    width: 202px;
+    height: 2px;
+    display: block;
+    margin-left: 55px;
+  }
+
   .editor__range--hidden {
     display: block;
+    padding-top: 38px;
+  }
+
+  .editor__range--hidden:last-child {
+    padding-top: 35px;
+  }
+
+  .editor__point {
+    bottom: 27px;
+    right: 60px;
+  }
+
+  .editor__point--end {
+    bottom: 26px;
+    right: 181px;
+  }
+
+  .editor__point--center {
+    right: 110px;
+  }
+
+  .editor__item {
+    position: absolute;
+  }
+
+  .editor__item--cut {
+    top: -5px;
+    left: 26px;
+    width: 25px;
+  }
+
+  .editor__item--fill {
+    top: 70px;
+    left: 28px;
+    width: 25px;
+  }
+
+  .editor__item--cont {
+    top: 139px;
+    left: 25px;
+    width: 17px;
   }
 
   .editor-wrapper-tool {
@@ -93,24 +199,98 @@
   }
 
   .editor__list-tool {
-    flex-direction: column;
     margin: 0;
+    width: 0;
+  }
+
+  .editor__wrap-button {
+    border: none;
+    padding-top: 43px;
+    text-align: start;
   }
 }
 
 @media (min-width: 1200px) {
   .editor {
-    width: 1000px;
+    width: 940px;
     margin: auto;
-    padding: 50px 0;
+    padding: 54px 0;
+    padding-bottom: 6px;
+  }
+
+  .editor-main__wrapper {
+    padding: 0;
+    width: 800px;
   }
 
   .editor__uppload-photo {
-    width: 347px;
-    min-height: 464px;
     background-image: url("../img/photo-road-desktop@1x.jpg");
-    margin-right: 14px;
-    margin-left: 50px;
-    background-position-x: center;
+    margin: 0;
+    margin-right: 60px;
+    margin-left: 10px;
+  }
+
+  .editor-wrapper {
+    width: 410px;
+  }
+
+  .editor__item--cut {
+    top: -2px;
+    left: 28px;
+    width: 49px;
+  }
+
+  .editor__item--fill {
+    top: 73px;
+    left: 31px;
+    width: 49px;
+  }
+
+  .editor__item--cont {
+    top: 142px;
+    left: 29px;
+    width: 38px;
+  }
+
+  .editor__range {
+    width: 385px;
+    padding-top: 22px;
+  }
+
+  .editor__range--hidden {
+    display: block;
+    padding-top: 38px;
+  }
+
+  .editor__range::before {
+    width: 288px;
+    margin-left: 98px;
+  }
+
+  .editor__point {
+    bottom: 26px;
+    right: 203px;
+  }
+
+  .editor__point--end {
+    bottom: 26px;
+    right: 26px;
+  }
+
+  .editor__point--center {
+    right: 114px;
+  }
+
+  .editor__wrap-button {
+    width: 417px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor__button {
+    width: 183px;
+    font-size: 18px;
+    margin: 105px 0 0 5px;
+    padding: 13px 10px 17px 15px;
   }
 }

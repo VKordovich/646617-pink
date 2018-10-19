@@ -10,12 +10,17 @@
 .page-photo__text-top,
 .page-photo__text-bottom {
   margin: 0;
-  padding: 40px 15px;
+  padding: 46px 15px 49px;
   text-align: center;
+}
+.page-photo__text-bottom {
+  padding: 42px 19px 42px 15px;
 }
 .page-photo__item {
   margin: 0;
   width: 100%;
+  line-height: 24px;
+  position: relative;
 }
 .page-photo__author-picture {
   margin: 0;
@@ -51,6 +56,7 @@
 }
 .page-photo__wrap {
   margin-top: 20px;
+  line-height: 24px;
 }
 .page-photo__author-name {
   font-style: normal;
@@ -65,41 +71,112 @@
   margin: 0;
 }
 .page-photo__wrap-text {
-  padding: 20px 10px;
+  padding: 17px 18px;
 }
 .page-photo__likes {
   color: #d22856;
   margin: 0;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-size: 12px;
+  padding-left: 31px;
+  text-transform: uppercase;
 }
 .main-wrapper-photos {
   width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
-@media (min-width: 768px) {
+.main-wrapper-photos--text {
+  background-color: white;
+}
+.page-photo__item--panoram::before {
+  content: "Панорама дня";
+  text-transform: uppercase;
+  background-color: #d22856;
+  text-align: center;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  right: 6%;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: bold;
+}
+@media (min-width: 660px) {
   .page-photo__author-picture {
-    min-height: 354px;
+    min-height: 300px;
   }
   .page-photo__author-picture--panoram {
     background-image: url("../img/panorama-tablet@1x.jpg");
-    min-height: 559px;
+    min-height: 509px;
   }
   .main-wrapper-photos {
-    width: 354px;
+    width: 300px;
+  }
+  .main-wrapper-photos--text {
+    width: 500px;
+    font-size: 18px;
+  }
+  .page-photo__text-top {
+    margin: 0;
+    padding: 93px 15px 75px;
+    text-align: center;
+  }
+  .page-photo__text-bottom {
+    width: 620px;
+    margin: auto;
+    padding: 62px 15px 69px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .page-photo__wrap-text {
+    padding: 23px 28px;
+    min-height: 156px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-photo__likes {
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    padding-right: 40px;
   }
   .main-wrapper-photos--panoram {
-    width: 728px;
+    width: 620px;
+  }
+  .page-photo__wrap-text--panoram {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 24px 28px;
+    min-height: auto;
+  }
+  .main-wrapper-photos--panoram .page-photo__likes {
+    order: -1;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 31px;
+    position: absolute;
+    top: 25px;
   }
   .wrapper-card {
-    width: 728px;
+    width: 620px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   .page-photo__wrap {
     margin-right: 20px;
     display: flex;
+    min-height: 456px;
   }
   .page-photo__wrap:nth-child(even) {
     margin-right: 0;
@@ -122,30 +199,56 @@
   .page-photo__author-picture--wing {
     background-image: url("../img/photo-wing-tablet@1x.jpg");
   }
+  .page-photo__item {
+    position: relative;
+  }
+  .page-photo__item--panoram::before {
+    content: "Панорама дня";
+    top: 57px;
+    right: 3%;
+  }
 }
 @media (min-width: 1200px) {
   .page-photo__author-picture {
-    min-height: 450px;
+    min-height: 400px;
+  }
+  .page-photo__item--panoram::before {
+    content: "Панорама дня";
+    top: 55px;
+    right: 11%;
   }
   .main-wrapper-photos--text {
-    width: 514px;
+    width: 940px;
   }
   .page-photo__author-picture--panoram {
     background-image: url("../img/panorama-desktop@1x.jpg");
     min-height: 506px;
   }
-  .main-wrapper-photos {
-    width: 320px;
+  .page-photo__text-top {
+    padding: 93px 156px 86px;
   }
   .main-wrapper-photos--panoram {
-    width: 1000px;
+    width: 940px;
+  }
+  .page-photo__wrap-text--panoram {
+    padding: 25px 27px;
+  }
+  .main-wrapper-photos--panoram .page-photo__likes {
+    padding-right: 35px;
   }
   .wrapper-card {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .page-photo__wrap {
+    margin-top: 48px;
+    margin-bottom: 5px;
+  }
+  .page-photo__text-bottom {
+    padding: 53px 14px 67px;
   }
   .page-photo__wrap:nth-child(even) {
     margin-right: 20px;

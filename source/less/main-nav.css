@@ -13,11 +13,11 @@
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
   text-align: center;
-  background-color: #274462;
+  background-color: #283645;
   vertical-align: middle;
   box-sizing: border-box;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 .site-list__adress {
   text-decoration: none;
@@ -26,13 +26,35 @@
   font-weight: bold;
   vertical-align: middle;
 }
+.site-list__adress:hover {
+  color: #d22856;
+}
+.site-list__adress:active {
+  color: rgba(210, 40, 86, 0.3);
+}
 @media (min-width: 1200px) {
   .site-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .site-list__adress {
+    text-transform: none;
+    font-weight: normal;
   }
   .site-list__list-item {
     border: none;
     background-color: transparent;
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+  .site-list__adress:hover {
+    color: #d22856;
+  }
+  .site-list__adress:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .site-list__adress--active {
+    border-bottom: 2px solid #ffffff;
   }
 }

@@ -4,11 +4,18 @@
 .slider__toggle {
   font-size: 0;
   padding: 0;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background-color: #dadcdf;
   border-radius: 50%;
   border: none;
+  margin-right: 13px;
+}
+.slider__toggle:hover {
+  background-color: #7e868f;
+}
+.slider__toggle:active {
+  background-color: white;
 }
 .slider__toggle svg {
   display: none;
@@ -30,21 +37,21 @@
     display: block;
   }
   .slider__toggle {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 310px;
     background-color: transparent;
     border-radius: 0;
     border: none;
   }
   .slider__toggle--left {
     position: absolute;
-    bottom: -160px;
-    left: 175px;
+    bottom: -250px;
+    left: 131px;
   }
   .slider__toggle--right {
     position: absolute;
-    bottom: -160px;
-    right: 175px;
+    bottom: -250px;
+    right: 50px;
   }
   .slider__toggle--center {
     display: none;

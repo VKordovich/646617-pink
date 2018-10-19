@@ -6,9 +6,10 @@
 
 .comment {
   border: none;
-  margin: 0;
   padding: 0;
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .comment__title {
@@ -16,7 +17,7 @@
   line-height: @comment-font-height;
   color: #d22856;
   text-transform: uppercase;
-  padding: 10px 14px;
+  padding: 34px 14px 10px;
 }
 
 .comment__fullpls {
@@ -27,6 +28,40 @@
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  height: 218px;
-  padding: 20px;
+  min-height: 201px;
+  padding: 14px 18px;
+}
+
+@media (min-width: 660px) {
+  .comment {
+    border: 2px solid #e5e5e5;
+    margin-top: 51px;
+    width: 620px;
+    box-sizing: border-box;
+  }
+
+  .comment__title {
+    padding: 0 38px;
+  }
+
+  .comment__fullpls {
+    border: 2px solid #e5e5e5;
+    width: 500px;
+    margin-top: 31px;
+    min-height: 193px;
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment {
+    width: 940px;
+  }
+
+  .comment__fullpls {
+    width: 820px;
+    margin-top: 27px;
+    min-height: 128px;
+    margin-bottom: 36px;
+  }
 }

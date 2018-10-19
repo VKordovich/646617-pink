@@ -1,19 +1,38 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 140px;
+  margin: 0 auto;
 }
-
 .copyright__name {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
-  margin-right: 26px;
+  margin: 0;
+  margin-top: 9px;
+  padding-left: 4px;
 }
-
 .copyright__logo {
   font-size: 14px;
   line-height: 18px;
-  width: 43px;
-  height: 40px;
+  width: 40px;
+  height: 37px;
+  margin-left: auto;
+}
+@media (min-width: 660px) {
+  .copyright__name {
+    padding-left: 10px;
+  }
+  .copyright__logo > svg {
+    width: 52px;
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .copyright__name {
+    font-size: 18px;
+  }
+  .copyright {
+    width: 154px;
+  }
 }

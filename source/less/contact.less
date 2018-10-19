@@ -7,6 +7,11 @@
   border: none;
   margin: 0;
   padding: 0;
+  width: 280px;
+}
+
+.contact__title {
+  display: none;
 }
 
 .contact__name {
@@ -20,11 +25,113 @@
 .contact__input-name {
   border: 2px solid #e5e5e5;
   padding: 20px 7px 20px 20px;
-  margin-top: 15px;
-  font-size: @contact-font-size;
-  font-family: @contact-family;
+  margin-top: 6px;
+  font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
+}
+
+.contact__input-name:hover {
+  border: 2px solid #283645;
+}
+
+.contact__input-name:active {
+  border: 2px solid #d22856;
+}
+
+@media (min-width: 660px) {
+  .contact {
+    width: 620px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+  }
+
+  .contact__title {
+    display: table;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    padding: 0 28px;
+    text-align: center;
+  }
+
+  .contact__input-name {
+    width: 500px;
+    padding: 18px 60px 21px 18px;
+    margin-bottom: 10px;
+  }
+
+  .contact__name {
+    padding: 0 35px 0 19px;
+    margin-bottom: 26px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 2px;
+  }
+
+  .contact__name:nth-of-type(1) {
+    order: 2;
+  }
+
+  .contact__name:nth-of-type(2) {
+    order: 4;
+  }
+
+  .contact__input-name:nth-of-type(1) {
+    order: 1;
+  }
+
+  .contact__input-name:nth-of-type(2) {
+    order: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-wrapper {
+    flex-direction: row;
+    width: 820px;
+    margin-top: 29px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact__input-name {
+    width: 375px;
+    padding: 18px 60px 21px 18px;
+    margin-bottom: 10px;
+  }
+
+  .contact__name {
+    padding: 0 0 0 19px;
+    margin-bottom: 15px;
+  }
+
+  .contact__name:nth-of-type(1) {
+    order: 2;
+    width: 375px;
+  }
+
+  .contact__input-name:nth-of-type(1) {
+    order: 1;
+  }
+
+  .contact__name:nth-of-type(2) {
+    order: 4;
+    width: 356px;
+  }
+
+  .contact__input-name:nth-of-type(2) {
+    order: 1;
+  }
 }
