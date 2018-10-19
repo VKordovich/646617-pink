@@ -11,6 +11,12 @@
   border: none;
   margin-right: 13px;
 }
+.slider__toggle:hover {
+  background-color: #7e868f;
+}
+.slider__toggle:active {
+  background-color: white;
+}
 .slider__toggle svg {
   display: none;
 }

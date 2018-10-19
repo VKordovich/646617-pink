@@ -40,10 +40,19 @@
 }
 
 .page-footer__type-contact {
-  display: block;
+  display: inline-block;
   font-size: @font-size-footer;
   font-weight: 200;
   color: @color-footer;
+}
+
+.page-footer__type-contact:hover {
+  color: #283645;
+  border-bottom: 2px solid #283645;
+}
+
+.page-footer__type-contact:active {
+  color: rgba(40, 54, 69, 0.3);
 }
 
 .page-footer__item {
@@ -124,7 +133,7 @@
   .page-footer__item {
     margin-right: 38px;
     width: 280px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   .page-footer__item:last-child {

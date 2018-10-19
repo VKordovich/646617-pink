@@ -48,10 +48,18 @@
   width: 36px;
   height: 36px;
   background-color: white;
-  border: 1px solid #e5e5e5;
+  border: 1px solid white;
   position: absolute;
   bottom: -4px;
   left: 0;
+}
+
+.progress__name:hover::before {
+  border: 1px solid #283645;
+}
+
+.progress__name:active::before {
+  border: 1px solid #d22856;
 }
 
 .progress__check-name {

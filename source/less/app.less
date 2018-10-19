@@ -44,7 +44,7 @@
   width: 36px;
   height: 36px;
   background-color: white;
-  border: 1px solid #e5e5e5;
+  border: 2px solid white;
   border-radius: 50%;
   position: absolute;
   bottom: -4px;
@@ -54,6 +54,15 @@
 .app__check-name:checked + .app__name::before {
   background-color: #d22856;
   box-shadow: 0 0 0 11px white inset;
+}
+
+.app__name:hover::before {
+  border: 2px solid #283645;
+}
+
+.app__check-name:checked + .app__name:active::before {
+  border: 2px solid #d22856;
+  background-color: white;
 }
 
 .app__check-name {
