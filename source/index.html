@@ -11,38 +11,45 @@
 <body>
 
   <header class="page-header">
-    <div class="wrapper-navigation">
-      <div class="page-header__logo">
-        <div class="main-wrapper-head">
-          <a class="page-header__img">
-            <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </a>
-          <button class="page-header__button-head " type="button">Открыть меню</button>
+    <div class="decorative-wrap">
+      <div class="wrapper-navigation">
+        <div class="page-header__logo">
+          <div class="main-wrapper-head">
+            <a class="page-header__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="Пинк">
+              </picture>
+            </a>
+            <button class="page-header__button-head " type="button">Открыть меню</button>
+          </div>
         </div>
+        <nav class="main-nav page-header__main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__list-item">
+              <a class="site-list__adress site-list__adress--active" href="#">Главная</a>
+            </li>
+            <li class="site-list__list-item">
+              <a class="site-list__adress" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__list-item">
+              <a class="site-list__adress" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__list-item">
+              <a class="site-list__adress" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav page-header__main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__list-item">
-            <a class="site-list__adress site-list__adress--active" href="#">Главная</a>
-          </li>
-          <li class="site-list__list-item">
-            <a class="site-list__adress" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__list-item">
-            <a class="site-list__adress" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__list-item">
-            <a class="site-list__adress" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <div class="wrapper-head-img">
       <div class="page-header__main-image">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
-          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-          <img class="page-header__pink-image" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Пинк»">
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
+          <img class="page-header__pink-image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
+            alt="Пинк»">
         </picture>
       </div>
 
@@ -219,7 +226,12 @@
           </p>
         </li>
       </ul>
-      <div class="page-footer__map">Карта</div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg, /img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg, /img/bg-map-tablet@2x.jpg 2x">
+        <img class="page-footer__map" src="/img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.jpg 2x"
+          alt="Карта">
+      </picture>
     </div>
     <div class="page-footer__triangle-img">
       <svg class="page-footer__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

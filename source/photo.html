@@ -11,12 +11,17 @@
 <body>
 
   <header class="page-header">
-    <div class="wrapper-navigation">
-      <div class="page-header__logo">
-        <div class="main-wrapper-head">
-          <a class="page-header__img">
-            <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </a>
+      <div class="decorative-wrap">
+          <div class="wrapper-navigation">
+            <div class="page-header__logo">
+              <div class="main-wrapper-head">
+                <a class="page-header__img">
+                  <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="Пинк">
+                  </picture>
+                </a>
           <button class="page-header__button-head " type="button">Открыть меню</button>
         </div>
       </div>
@@ -37,6 +42,7 @@
         </ul>
       </nav>
     </div>
+      </div>
     <p class="page-header__information">Фотографии пользователей</p>
 
   </header>
@@ -48,7 +54,11 @@
         ваших?</p>
     </div>
     <blockquote class="page-photo__item page-photo__item--panoram">
-      <p class="page-photo__author-picture page-photo__author-picture--panoram">Фото Анны</p>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/img/panorama-desktop@1x.jpg, /img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg, /img/panorama-tablet@2x.jpg 2x">
+        <img class="page-photo__author-picture page-photo__author-picture--panoram" src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+      </picture>
       <div class="main-wrapper-photos main-wrapper-photos--panoram">
         <div class="page-photo__wrap-text page-photo__wrap-text--panoram">
           <cite class="page-photo__author-name">Анна
@@ -67,7 +77,11 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--car">Фото от Левона</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-car-desktop@1x.jpg, /img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg, /img/photo-car-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-car-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+                </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Левон
                 <time class="page-photo__time">(5 часов назад)</time>
@@ -82,7 +96,11 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--drumset">Фото Антона</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-drumset-desktop@1x.jpg, /img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg, /img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+                </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Антон
                 <time class="page-photo__time">(12 часов назад)</time>
@@ -97,7 +115,11 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--window">Фото Бориса</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-window-desktop@1x.jpg, /img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg, /img/photo-window-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+                </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Борис
                 <time class="page-photo__time">(20 часов назад)</time>
@@ -112,7 +134,11 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--fair">Фото Сергея</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-fair-desktop@1x.jpg, /img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg, /img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+                </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Сергей
                 <time class="page-photo__time">(25 часов назад)</time>
@@ -127,7 +153,11 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--pov">Фото Максима</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-pov-desktop@1x.jpg, /img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg, /img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-pov-mobile@1x.jpg" srcset="/img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
+                </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Максим
                 <time class="page-photo__time">(40 часов назад)</time>
@@ -142,7 +172,12 @@
       <div class="page-photo__wrap">
         <div class="main-wrapper-photos main-wrapper-photos--color">
           <blockquote class="page-photo__item">
-            <p class="page-photo__author-picture page-photo__author-picture--wing">Фото надежды</p>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/photo-wing-desktop@1x.jpg, /img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg, /img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="page-photo__author-picture" src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+                </picture>
+
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Надежда
                 <time class="page-photo__time">(45 часов назад)</time>
@@ -159,7 +194,11 @@
 
     <section class="editor">
       <div class="editor-main__wrapper">
-        <div class="editor__uppload-photo">Загруженная фотография</div>
+          <picture>
+              <source media="(min-width: 1200px)" srcset="/img/photo-road-desktop@1x.jpg, /img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg, /img/photo-road-tablet@2x.jpg 2x">
+              <img class="editor__uppload-photo" src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото">
+            </picture>
         <div class="editor-wrapper">
           <div class="editor-wrapper-tool">
             <ul class="editor__list-tool">

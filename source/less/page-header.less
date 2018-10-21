@@ -39,6 +39,7 @@
 .page-header__logo-head {
   margin-top: 21px;
   margin-bottom: 16px;
+  width: 75px;
 }
 
 .page-header__button-head {
@@ -60,6 +61,11 @@
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: center;
+  }
 }
 
 .page-header__pink-image {
@@ -79,6 +85,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 142px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: center;
+  }
 }
 
 @media (min-width: 660px) {
@@ -87,8 +98,9 @@
   }
 
   .page-header__logo-head {
-    margin-top: 42px;
-    margin-bottom: 36px;
+    margin-top: 26px;
+    margin-bottom: 35px;
+    width: auto;
   }
 
   .page-header__button-head {
@@ -101,6 +113,11 @@
     position: relative;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-header__main-image {
@@ -125,6 +142,11 @@
     font-size: 50px;
     line-height: 60px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-header__information--form {
@@ -138,6 +160,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
+  }
+
+  .page-header__logo-head {
+    margin-top: 27px;
+    margin-bottom: 30px;
+    width: auto;
   }
 
   .wrapper-navigation {
@@ -149,7 +182,7 @@
 
   .page-header__main-nav {
     margin-left: auto;
-    width: 621px;
+    width: 622px;
   }
 
   .wrapper-head-img {
@@ -163,8 +196,8 @@
   }
 
   .main-wrapper-head {
-    width: 100px;
-    margin-right: 170px;
+    width: 150px;
+    margin-right: 168px;
   }
 
   .page-header__logo {
@@ -196,5 +229,9 @@
   .page-header__information--form {
     width: 760px;
     padding: 66px 0 100px;
+  }
+
+  .decorative-wrap {
+    background-color: hsla(0, 0%, 7%, 0.3);
   }
 }

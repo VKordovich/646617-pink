@@ -11,12 +11,17 @@
 <body>
 
   <header class="page-header">
-    <div class="wrapper-navigation">
-      <div class="page-header__logo">
-        <div class="main-wrapper-head">
-          <a class="page-header__img">
-            <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-          </a>
+      <div class="decorative-wrap">
+          <div class="wrapper-navigation">
+            <div class="page-header__logo">
+              <div class="main-wrapper-head">
+                <a class="page-header__img">
+                  <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="Пинк">
+                  </picture>
+                </a>
           <button class="page-header__button-head " type="button">Открыть меню</button>
         </div>
       </div>
@@ -37,6 +42,7 @@
         </ul>
       </nav>
     </div>
+      </div>
     <p class="page-header__information page-header__information--form">Конкурс на самое безбашенное путешествие с Пинк</p>
 
   </header>
