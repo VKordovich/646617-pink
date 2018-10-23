@@ -83,6 +83,18 @@
   font-size: 12px;
   padding-left: 31px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.page-photo__likes::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 .main-wrapper-photos {
@@ -158,6 +170,12 @@
     padding: 0;
     margin-top: auto;
     padding-right: 40px;
+  }
+
+  .page-photo__likes::before {
+    top: 5px;
+    right: 2px;
+    left: auto;
   }
 
   .main-wrapper-photos--panoram {
