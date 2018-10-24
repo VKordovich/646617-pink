@@ -66,6 +66,11 @@
   background-position: 50% 111%;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-screen-mobile@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
 }
 
 .predestination__research {
@@ -115,6 +120,11 @@
     width: 620px;
     margin: 0 auto;
     min-height: 486px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   .predestination__list {
@@ -153,6 +163,7 @@
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    position: relative;
 
     &::before {
       content: "";
@@ -164,6 +175,8 @@
       background-image: url("../img/icon-timer.svg");
       background-size: contain;
       background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
     }
   }
 
@@ -192,6 +205,24 @@
 
   .predestination__research-text br {
     display: none;
+  }
+
+  .predestination__hours {
+    width: 202px;
+    height: 202px;
+    font-size: 96px;
+    line-height: 150px;
+    margin: 0;
+    border: 14px solid #d22856;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 87px;
+    margin-top: 55px;
+    margin-left: 19px;
+    padding-top: 7px;
+    color: #d22856;
+    font-weight: bold;
+    z-index: 2;
   }
 }
 
@@ -262,6 +293,11 @@
     background-image: url("../img/iphone-screen-3-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-1-desktop@1x.png");
     background-position: initial;
     background-position-x: right, center, left;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png"), url("../img/iphone-screen-2-desktop@2x.png"), url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px auto;
+    }
   }
 
   .predestination__research {
@@ -272,7 +308,7 @@
     display: flex;
     padding: 0;
     margin-top: 9px;
-    margin-bottom: 67px;
+    margin-bottom: 90px;
 
     &::before {
       content: "";
@@ -313,5 +349,17 @@
 
   .predestination__research-text br {
     display: inline;
+  }
+
+  .predestination__hours {
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    line-height: 186px;
+    border: 17px solid #d22856;
+    margin-right: 90px;
+    margin-top: 68px;
+    margin-left: 23px;
+    padding-top: 10px;
   }
 }

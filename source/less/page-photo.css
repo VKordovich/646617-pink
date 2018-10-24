@@ -32,27 +32,8 @@
   min-height: 180px;
 }
 .page-photo__author-picture--panoram {
-  background-image: url("../img/panorama-mobile@1x.jpg");
   min-height: 137px;
   background-position: center;
-}
-.page-photo__author-picture--car {
-  background-image: url("../img/photo-car-mobile@1x.jpg");
-}
-.page-photo__author-picture--drumset {
-  background-image: url("../img/photo-drumset-mobile@1x.jpg");
-}
-.page-photo__author-picture--window {
-  background-image: url("../img/photo-window-mobile@1x.jpg");
-}
-.page-photo__author-picture--fair {
-  background-image: url("../img/photo-fair-mobile@1x.jpg");
-}
-.page-photo__author-picture--pov {
-  background-image: url("../img/photo-pov-mobile@1x.jpg");
-}
-.page-photo__author-picture--wing {
-  background-image: url("../img/photo-wing-mobile@1x.jpg");
 }
 .page-photo__wrap {
   margin-top: 20px;
@@ -66,6 +47,9 @@
   font-weight: 300;
   text-transform: uppercase;
   font-size: 12px;
+}
+.page-photo__item > picture {
+  display: flex;
 }
 .page-photo__text {
   margin: 0;
@@ -81,6 +65,17 @@
   font-size: 12px;
   padding-left: 31px;
   text-transform: uppercase;
+  position: relative;
+}
+.page-photo__likes::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 .main-wrapper-photos {
   width: 280px;
@@ -111,7 +106,6 @@
     min-height: 300px;
   }
   .page-photo__author-picture--panoram {
-    background-image: url("../img/panorama-tablet@1x.jpg");
     min-height: 509px;
   }
   .main-wrapper-photos {
@@ -145,6 +139,11 @@
     padding: 0;
     margin-top: auto;
     padding-right: 40px;
+  }
+  .page-photo__likes::before {
+    top: 5px;
+    right: 2px;
+    left: auto;
   }
   .main-wrapper-photos--panoram {
     width: 620px;
@@ -181,24 +180,6 @@
   .page-photo__wrap:nth-child(even) {
     margin-right: 0;
   }
-  .page-photo__author-picture--car {
-    background-image: url("../img/photo-car-tablet@1x.jpg");
-  }
-  .page-photo__author-picture--drumset {
-    background-image: url("../img/photo-drumset-tablet@1x.jpg");
-  }
-  .page-photo__author-picture--window {
-    background-image: url("../img/photo-window-tablet@1x.jpg");
-  }
-  .page-photo__author-picture--fair {
-    background-image: url("../img/photo-fair-tablet@1x.jpg");
-  }
-  .page-photo__author-picture--pov {
-    background-image: url("../img/photo-pov-tablet@1x.jpg");
-  }
-  .page-photo__author-picture--wing {
-    background-image: url("../img/photo-wing-tablet@1x.jpg");
-  }
   .page-photo__item {
     position: relative;
   }
@@ -221,7 +202,6 @@
     width: 940px;
   }
   .page-photo__author-picture--panoram {
-    background-image: url("../img/panorama-desktop@1x.jpg");
     min-height: 506px;
   }
   .page-photo__text-top {
@@ -255,23 +235,5 @@
   }
   .page-photo__wrap:nth-child(3n) {
     margin-right: 0;
-  }
-  .page-photo__author-picture--car {
-    background-image: url("../img/photo-car-desktop@1x.jpg");
-  }
-  .page-photo__author-picture--drumset {
-    background-image: url("../img/photo-drumset-desktop@1x.jpg");
-  }
-  .page-photo__author-picture--window {
-    background-image: url("../img/photo-window-desktop@1x.jpg");
-  }
-  .page-photo__author-picture--fair {
-    background-image: url("../img/photo-fair-desktop@1x.jpg");
-  }
-  .page-photo__author-picture--pov {
-    background-image: url("../img/photo-pov-desktop@1x.jpg");
-  }
-  .page-photo__author-picture--wing {
-    background-image: url("../img/photo-wing-desktop@1x.jpg");
   }
 }

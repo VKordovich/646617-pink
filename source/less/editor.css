@@ -7,7 +7,6 @@
   font-size: 0;
   width: 280px;
   min-height: 375px;
-  background-image: url("../img/photo-road-mobile@1x.jpg");
   margin: auto;
 }
 .editor__list-tool {
@@ -16,12 +15,15 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 213px;
 }
 .editor__item {
   margin-right: 32px;
   display: flex;
+}
+.editor__item svg {
+  fill: #d22856;
 }
 .editor__item:nth-child(3) {
   display: flex;
@@ -97,8 +99,7 @@
   }
   .editor__uppload-photo {
     width: 300px;
-    min-height: 453px;
-    background-image: url("../img/photo-road-tablet@1x.jpg");
+    min-height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 20px;
@@ -119,8 +120,7 @@
     padding-top: 19px;
     border-bottom: 1px solid #dddfe0;
   }
-  .editor__range::before {
-    content: "";
+  .editor__line {
     background-color: #283645;
     width: 202px;
     height: 2px;
@@ -175,6 +175,7 @@
     border: none;
     padding-top: 43px;
     text-align: start;
+    padding-bottom: 54px;
   }
 }
 @media (min-width: 1200px) {
@@ -189,7 +190,6 @@
     width: 800px;
   }
   .editor__uppload-photo {
-    background-image: url("../img/photo-road-desktop@1x.jpg");
     margin: 0;
     margin-right: 60px;
     margin-left: 10px;
@@ -220,7 +220,7 @@
     display: block;
     padding-top: 38px;
   }
-  .editor__range::before {
+  .editor__line {
     width: 288px;
     margin-left: 98px;
   }

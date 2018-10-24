@@ -54,12 +54,8 @@
   top: -32px;
   left: 0;
   z-index: -1;
-  width: 100%;
-  min-height: 644px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 320px;
+  max-height: 645px;
 }
 .main-wrapper-footer {
   width: 280px;
@@ -101,11 +97,6 @@
   .page-footer {
     background-color: transparent;
     min-height: 906px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 18px;
-    background-position-x: -40px;
   }
   .page-footer__text {
     width: 400px;
@@ -148,9 +139,6 @@
     width: 100%;
     height: 96px;
   }
-  .page-footer__map {
-    display: none;
-  }
   .page-footer__main {
     display: block;
     background-color: white;
@@ -161,6 +149,11 @@
   .main-wrapper-footer::before {
     top: 609px;
     left: 322px;
+  }
+  .page-footer__map {
+    top: 91px;
+    width: 700px;
+    max-height: 800px;
   }
 }
 @media (min-width: 1200px) {
@@ -179,9 +172,10 @@
     width: 100%;
   }
   .page-footer__map {
-    width: 100%;
+    width: 1200px;
     min-height: 767px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
+    top: 89px;
+    max-height: 976px;
   }
   .page-footer__contacts-list {
     width: 940px;
@@ -210,7 +204,6 @@
     margin-top: 16px;
   }
   .page-footer {
-    background-image: url("../img/bg-map-desktop@1x.jpg");
     min-height: 1065px;
     background-position-y: 51px;
   }

@@ -38,7 +38,7 @@
 @media (min-width: 660px) {
   .reviews {
     font-size: 18px;
-    margin-top: 59px;
+    margin-top: 77px;
   }
   .reviews__years {
     display: inline;
@@ -79,6 +79,7 @@
   .reviews {
     display: flex;
     flex-direction: column;
+    margin-top: 59px;
   }
   .reviews__name {
     font-size: 24px;
