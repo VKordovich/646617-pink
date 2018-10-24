@@ -25,6 +25,9 @@
   height: 15px;
   display: flex;
 }
+.social__a svg {
+  fill: #d22856;
+}
 .social__a--facebook {
   padding: 14px 18px;
 }

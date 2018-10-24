@@ -66,6 +66,10 @@
   position: absolute;
   right: 6px;
   top: 15px;
+  fill: #3dc644;
+}
+.cost__icon--no svg {
+  fill: #f25b26;
 }
 .main-wrapper-cost {
   width: 100%;
