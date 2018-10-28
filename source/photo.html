@@ -13,7 +13,11 @@
 
 <body>
 
-  <svg style="display:none;">
+  <div style="display:none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <!-- <svg style="display:none;">
     <symbol id="fill" x="0px" y="0px" viewBox="0 0 48 48">
       <path fill="none" d="M0,0h48v48H0V0z"></path>
       <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
@@ -39,14 +43,14 @@
     <symbol id="academy" viewBox="0 0 60 60">
       <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
     </symbol>
-  </svg>
+  </svg> -->
 
   <header class="page-header">
     <div class="decorative-wrap">
       <div class="wrapper-navigation">
         <div class="page-header__logo">
           <div class="main-wrapper-head">
-            <a class="page-header__img">
+            <a class="page-header__img" href="index.html">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -91,7 +95,8 @@
         <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@1x.webp 2x">
         <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
         <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-        <img class="page-photo__author-picture page-photo__author-picture--panoram" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+        <img class="page-photo__author-picture page-photo__author-picture--panoram" src="img/panorama-mobile@1x.jpg"
+          srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
       </picture>
       <div class="main-wrapper-photos main-wrapper-photos--panoram">
         <div class="page-photo__wrap-text page-photo__wrap-text--panoram">
@@ -117,7 +122,8 @@
               <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+              <img class="page-photo__author-picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                alt="Фото Левона">
             </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Левон
@@ -139,7 +145,8 @@
               <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+              <img class="page-photo__author-picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                alt="Фото Антона">
             </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Антон
@@ -161,7 +168,8 @@
               <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+              <img class="page-photo__author-picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                alt="Фото Бориса">
             </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Борис
@@ -183,7 +191,8 @@
               <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+              <img class="page-photo__author-picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                alt="Фото Сергея">
             </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Сергей
@@ -205,7 +214,8 @@
               <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
+              <img class="page-photo__author-picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                alt="Фото Максима">
             </picture>
             <div class="page-photo__wrap-text">
               <cite class="page-photo__author-name">Максим
@@ -227,7 +237,8 @@
               <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="page-photo__author-picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+              <img class="page-photo__author-picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                alt="Фото Надежды">
             </picture>
 
             <div class="page-photo__wrap-text">
@@ -252,26 +263,27 @@
           <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
-          <img class="editor__uppload-photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото">
+          <img class="editor__uppload-photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+            alt="Загруженное фото">
         </picture>
         <div class="editor-wrapper">
           <div class="editor-wrapper-tool">
             <ul class="editor__list-tool">
               <li class="editor__item editor__item--active editor__item--cut">
                 <svg width="48px" height="48px">
-                  <use xlink:href="#cut"></use>
+                  <use xlink:href="#icon-editor-crop"></use>
                 </svg>
                 <span class="visually-hidden">Обрезать</span>
               </li>
               <li class="editor__item editor__item editor__item--fill">
                 <svg width="48px" height="48px">
-                  <use xlink:href="#fill"></use>
+                  <use xlink:href="#icon-editor-fill"></use>
                 </svg>
                 <span class="visually-hidden">Заливка</span>
               </li>
               <li class="editor__item editor__item editor__item--cont">
                 <svg width="31.92px" height="31.92px">
-                  <use xlink:href="#cont"></use>
+                  <use xlink:href="#icon-editor-contrast"></use>
                 </svg>
                 <span class="visually-hidden">Контраст</span>
               </li>
@@ -313,7 +325,7 @@
             <a class="social__a social__a--twitter" href="#" aria-label="Твиттер">
               <span class="social__name">Твиттер</span>
               <svg width="17.5px" height="14.663px">
-                <use xlink:href="#twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -321,7 +333,7 @@
             <a class="social__a social__a--facebook" href="#" aria-label="Фейсбук">
               <span class="social__name">Фейсбук</span>
               <svg width="8.673px" height="18.944px">
-                <use xlink:href="#facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -329,7 +341,7 @@
             <a class="social__a social__a--youtube" href="#" aria-label="Ютуб">
               <span class="social__name">Ютуб</span>
               <svg width="14.64px" height="13.96px">
-                <use xlink:href="#youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -338,9 +350,9 @@
 
       <div class="copyright footer__copyright-pink">
         <p class="copyright__name">Разработано</p>
-        <a class="copyright__logo" href="#">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="52px" height="40px">
-            <use xlink:href="#academy"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>

@@ -23,6 +23,18 @@
   display: flex;
 }
 .editor__item svg {
+  fill: rgba(40, 54, 69, 0.3);
+}
+.editor__item:hover svg {
+  fill: rgba(40, 54, 69, 0.5);
+}
+.editor__item svg:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}
+.editor__item:active svg {
+  fill: #d22856;
+}
+.editor__item--active svg {
   fill: #d22856;
 }
 .editor__item:nth-child(3) {

@@ -43,33 +43,37 @@
   margin-bottom: 47px;
 }
 
-.progress__name::before {
-  content: "";
+.progress__icon {
+  position: absolute;
   width: 36px;
   height: 36px;
-  background-color: white;
-  border: 1px solid white;
-  position: absolute;
-  bottom: -4px;
+  border: 2px solid #e5e5e5;
+  bottom: -5px;
   left: 0;
+  text-align: center;
 }
 
-.progress__name:hover::before {
-  border: 1px solid #283645;
+.progress__name svg {
+  width: 22px;
+  height: 36px;
+  fill: #d22856;
+  display: none;
 }
 
-.progress__name:active::before {
-  border: 1px solid #d22856;
+.progress__name:hover .progress__icon {
+  border: 2px solid #283645;
+}
+
+.progress__name:active .progress__icon {
+  border: 2px solid #d22856;
 }
 
 .progress__check-name {
   display: none;
 }
 
-.progress__check-name:checked + .progress__name::before {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
+.progress__check-name:checked + .progress__name svg {
+  display: inline-block;
 }
 
 @media (min-width: 660px) {

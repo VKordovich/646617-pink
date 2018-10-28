@@ -3,15 +3,13 @@
 }
 .predestination-wrapper-title {
   background-color: white;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   position: relative;
 }
-.predestination__angle {
-  width: 320px;
-  height: 31px;
-  position: absolute;
-  bottom: -28px;
-  fill: white;
+.predestination-wrapper {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .predestination__title {
   color: black;
@@ -24,11 +22,11 @@
 }
 .predestination__title--size {
   padding-top: 1px;
+  margin-bottom: 0;
 }
 .predestination__list {
   list-style: none;
   margin: 0;
-  margin-top: 74px;
   padding: 0;
   background-color: #f2f2f2;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -49,9 +47,10 @@
 }
 .predestination__wrap {
   padding-bottom: 287px;
-  background-position: 50% 111%;
+  background-position: 50% 109%;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-screen-mobile@1x.png");
+  padding-top: 94px;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .predestination__wrap {
@@ -84,25 +83,22 @@
     margin-top: 0;
     margin-bottom: 23px;
   }
-  .predestination__angle {
-    width: 660px;
-    height: 60px;
-    bottom: -55px;
+  .predestination-wrapper {
+    background-size: 1600px;
   }
   .predestination__wrap {
     padding-left: 309px;
-    padding-bottom: 0;
+    padding-bottom: 42px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left bottom;
     z-index: 1;
     box-sizing: border-box;
     width: 620px;
     margin: 0 auto;
-    min-height: 486px;
+    min-height: 483px;
   }
   .predestination__list {
-    margin-top: 83px;
-    margin-bottom: 43px;
+    margin-top: 5px;
   }
   .predestination__item-text,
   .predestination__item-title {
@@ -121,6 +117,7 @@
   }
   .predestination__item:nth-child(3) {
     padding-left: 2px;
+    margin-bottom: 0;
   }
   .predestination__research {
     order: 2;
@@ -229,16 +226,14 @@
     text-align: center;
     margin-top: 1px;
   }
-  .predestination__angle {
-    width: 1200px;
-    height: 94px;
-    bottom: -94px;
-  }
   .predestination__list {
     display: flex;
     order: 2;
     margin-top: 106px;
     margin-bottom: 0;
+  }
+  .predestination-wrapper {
+    padding-top: 15px;
   }
   .predestination__wrap {
     width: 940px;

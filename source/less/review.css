@@ -29,13 +29,6 @@
   margin-bottom: 38px;
   padding-left: 9px;
 }
-.review__angle {
-  width: 320px;
-  height: 31px;
-  position: absolute;
-  bottom: -27px;
-  fill: white;
-}
 @media (min-width: 660px) {
   .reviews {
     font-size: 18px;
@@ -61,11 +54,6 @@
     flex-direction: column;
     width: 660px;
     margin: auto;
-  }
-  .review__angle {
-    width: 660px;
-    height: 60px;
-    bottom: -56px;
   }
   .reviews__toggles {
     margin-bottom: 19px;
@@ -95,10 +83,5 @@
     margin: 9px 0;
     margin-bottom: 7px;
     padding: 0;
-  }
-  .review__angle {
-    width: 1200px;
-    height: 94px;
-    bottom: -94px;
   }
 }

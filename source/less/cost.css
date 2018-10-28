@@ -1,6 +1,8 @@
 .cost {
   background-color: #f2f2f2;
-  border-top: 1px solid transparent;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% -9%;
 }
 .cost__rate-table {
   border-collapse: collapse;
@@ -61,19 +63,23 @@
   position: relative;
 }
 .cost__icon svg {
-  width: 55px;
-  min-height: 26px;
+  width: 53px;
+  min-height: 22px;
   position: absolute;
   right: 6px;
-  top: 15px;
+  top: 18px;
   fill: #3dc644;
 }
 .cost__icon--no svg {
   fill: #f25b26;
+  width: auto;
+  right: 20px;
+  top: 15px;
 }
 .main-wrapper-cost {
   width: 100%;
   overflow: hidden;
+  border-top: 1px solid transparent;
 }
 .cost__cell-hidden,
 .cost__table-empty {
@@ -85,6 +91,9 @@
   margin-bottom: 46px;
 }
 @media (min-width: 660px) {
+  .cost {
+    background-position: 50% -8%;
+  }
   .main-wrapper-cost {
     width: 660px;
     margin: auto;
@@ -127,7 +136,11 @@
   }
   .cost__icon svg {
     right: 50px;
-    top: 8px;
+    top: 12px;
+  }
+  .cost__icon--no svg {
+    right: 63px;
+    top: 9px;
   }
   .cost__hit {
     top: -3px;
@@ -140,6 +153,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .cost {
+    background-position: 50% 0%;
+  }
   .main-wrapper-cost {
     width: 940px;
     margin: 0 auto;
@@ -165,7 +181,11 @@
   }
   .cost__icon svg {
     right: 90px;
-    top: 17px;
+    top: 20px;
+  }
+  .cost__icon--no svg {
+    right: 104px;
+    top: 15px;
   }
   .cost__hit {
     top: 5px;
