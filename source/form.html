@@ -5,25 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensanslight.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/PictureFill.js" async></script>
 </head>
 
 <body>
-
   <div style="display:none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-
   <header class="page-header">
     <div class="page-header__decorative-wrap">
       <div class="page-header__wrapper-navigation">
         <div class="page-header__logo">
           <div class="page-header__main-wrapper-head">
-            <a class="page-header__img" href="#">
+            <a class="page-header__img" href="index.html">
               <svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
                 <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
@@ -56,11 +54,8 @@
       </div>
     </div>
     <p class="page-header__information page-header__information--form">Конкурс на самое безбашенное путешествие с Пинк</p>
-
   </header>
-
   <main class="page-form">
-
     <h1 class="visually-hidden">Основная форма</h1>
     <p class="page-form__text">Поделитесь своей историей и получите шанс выйграть ценный приз &mdash; 1000 миль на вашу
       бонусную карту! <span class="page-form__text-pls">Пожалуйста, заполните форму ниже:</span></p>
@@ -68,29 +63,23 @@
       <fieldset class="form-name page-form__form-name">
         <label class="form-name__name" for="lastName">Фамилия:</label>
         <input class="form-name__input-name" type="text" id="lastName" name="Last name" placeholder="Укажите фамилию *">
-
         <label class="form-name__name" for="firstName">Имя:</label>
         <input class="form-name__input-name form-name__input-name--long" type="text" id="firstName" name="First name"
           placeholder="Введите ваше имя *">
-
         <label class="form-name__name" for="thirdName">Отчество:</label>
         <input class="form-name__input-name" type="text" id="thirdName" name="Thrid name" placeholder="Ну и отчество тоже">
       </fieldset>
-
       <fieldset class="app page-form__app">
         <legend class="app__title">С каким приложением путешествовали?</legend>
         <div class="app__wrapper">
           <input class="app__check-name" type="radio" id="ios" name="choose" checked="">
           <label class="app__name" for="ios">Pink для iOS</label>
-
           <input class="app__check-name" type="radio" id="android" name="choose">
           <label class="app__name" for="android">Pink на Android</label>
-
           <input class="app__check-name" type="radio" id="windows" name="choose">
           <label class="app__name" for="windows">Windows Phone</label>
         </div>
       </fieldset>
-
       <fieldset class="contact page-form__contact">
         <legend class="contact__title">Контактная информация</legend>
         <div class="contact__wrapper">
@@ -100,7 +89,6 @@
           <input class="contact__input-name" type="text" id="email" name="email" placeholder="Введите почту *">
         </div>
       </fieldset>
-
       <fieldset class="progress page-form__progress">
         <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
         <div class="progress__wrapper">
@@ -113,7 +101,6 @@
             </span>
             Сделал селфи с акулой
           </label>
-
           <input class="progress__check-name" type="checkbox" id="beach" name="beach" checked="">
           <label class="progress__name" for="beach">
             <span class="progress__icon">
@@ -121,28 +108,24 @@
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </span>Обгорел на пляже</label>
-
           <input class="progress__check-name" type="checkbox" id="see" name="see">
           <label class="progress__name" for="see"> <span class="progress__icon">
               <svg width="17px" height="15px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </span>Видел Чака Норриса</label>
-
           <input class="progress__check-name" type="checkbox" id="present" name="present">
           <label class="progress__name" for="present"> <span class="progress__icon">
               <svg width="17px" height="15px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </span>Накупил сувениров</label>
-
           <input class="progress__check-name" type="checkbox" id="hold" name="hold" checked="">
           <label class="progress__name" for="hold"> <span class="progress__icon">
               <svg width="17px" height="15px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </span>Удержал башню</label>
-
           <input class="progress__check-name" type="checkbox" id="hotel" name="hotel">
           <label class="progress__name" for="hotel"> <span class="progress__icon">
               <svg width="17px" height="15px">
@@ -151,7 +134,6 @@
             </span>Разгромил отель</label>
         </div>
       </fieldset>
-
       <fieldset class="comment page-form__comment">
         <legend class="comment__title">Опишите свои эмоции</legend>
         <textarea class="comment__fullpls" name="comment" cols="31" rows="1" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -162,24 +144,19 @@
             заполнения</span> поля</p>
       </div>
     </form>
-
   </main>
-
   <footer class="footer footer--form">
     <div class="footer__main-wrapper-body">
       <div class="logo-footer footer__logo-pink">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <a class="logo-footer__adress" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="logo-footer__mobile" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
-              <use xlink:href="#logo-pink-blue-mobile"></use>
-            </svg>
-            <svg class="logo-footer__desktop" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
-              <use xlink:href="#logo-pink-blue-desktop"></use>
-            </svg>
-          </a>
+        <a class="logo-footer__adress" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="logo-footer__mobile" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+            <use xlink:href="#logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="logo-footer__desktop" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+            <use xlink:href="#logo-pink-blue-desktop"></use>
+          </svg>
         </a>
       </div>
-
       <div class="social footer__social-pink">
         <ul class="social__list">
           <li class="social__item">
@@ -208,7 +185,6 @@
           </li>
         </ul>
       </div>
-
       <div class="copyright footer__copyright-pink">
         <p class="copyright__name">Разработано</p>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -219,7 +195,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

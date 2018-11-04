@@ -1,7 +1,6 @@
 @background-color: #f2f2f2;
 @font-size: 14px;
 @font-height: 24px;
-@font-family:  "Open Sans", "Arial", sans-serif;
 @color: black;
 
 .predestination {
@@ -23,10 +22,11 @@
 .predestination__title {
   color: @color;
   font-size: 24px;
-  font-family: @font-family;
   line-height: 30px;
   font-weight: 100;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
   margin-top: 25px;
 }
 
@@ -41,7 +41,6 @@
   margin: 0;
   padding: 0;
   background-color: @background-color;
-  font-family: @font-family;
 }
 
 .predestination__item {
@@ -90,9 +89,11 @@
   .predestination {
     flex-direction: column;
     display: flex;
+    background-color: white;
   }
 
   .predestination__title {
+    width: 660px;
     font-size: 40px;
     line-height: 48px;
     margin-top: 34px;
@@ -103,10 +104,12 @@
     padding: 0 100px;
     margin-top: 0;
     margin-bottom: 48px;
+    box-sizing: border-box;
   }
 
   .predestination__wrapper {
     background-size: 100%;
+    background-color: #f2f2f2;
   }
 
   .predestination__wrap {
@@ -164,6 +167,9 @@
     line-height: 24px;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
+    width: 660px;
+    margin: auto;
 
     &::before {
       content: "";
@@ -230,11 +236,13 @@
   .predestination {
     flex-direction: column;
     display: flex;
+    background-color: @background-color;
   }
 
   .predestination__title {
     font-size: 50px;
     margin-top: 60px;
+    width: 1200px;
   }
 
   .predestination__title--size {
