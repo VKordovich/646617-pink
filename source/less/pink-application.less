@@ -1,16 +1,14 @@
 @app-BackgroundColor: hsl(213, 43%, 19%);
-@app-FontFamily: "Open Sans", "Arial", sans-serif;
 @app-FontSize: 14px;
 @app-line: 24px;
 @app-FontColor: hsl(0, 0%, 100%);
 
 .pink-application {
   background-color: @app-BackgroundColor;
-  font-family: @app-FontFamily;
   padding-bottom: 1px;
 }
 
-.pink__title {
+.pink-application__pink__title {
   display: none;
 }
 
@@ -18,7 +16,7 @@
   margin-top: 28px;
 }
 
-.main-wrapper-app {
+.pink-application__main-wrapper-app {
   margin: 0 auto;
   width: 280px;
 }
@@ -41,26 +39,36 @@
 
 .pink-application__item {
   width: 47px;
+  height: 58px;
+}
+
+.pink-application__item a {
+  font-size: 0;
   height: 56px;
 }
 
-.pink-application__item--apple {
+.pink-application__item-apple {
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
+  width: 47px;
+  display: block;
+  background-position: 0;
 }
 
-.pink-application__item--android {
+.pink-application__item-android {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   width: 46px;
-  height: 48px;
+  display: block;
+  background-position: 2px 8px;
 }
 
-.pink-application__item--win {
+.pink-application__item-win {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   width: 45px;
-  height: 45px;
+  display: block;
+  background-position: 2px 11px;
 }
 
 .pink-application__more-platforms {
@@ -69,7 +77,7 @@
   line-height: 24px;
   font-weight: lighter;
   text-align: center;
-  margin-top: 22px;
+  margin-top: 21px;
   margin-bottom: 29px;
 }
 
@@ -84,7 +92,7 @@
 }
 
 @media (min-width: 660px) {
-  .main-wrapper-app {
+  .pink-application__main-wrapper-app {
     width: 300px;
   }
 
@@ -95,12 +103,11 @@
     left: 3%;
   }
 
-  .pink__title {
+  .pink-application__pink__title {
     display: block;
     margin: 0;
     font-size: 40px;
     line-height: 47px;
-    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: lighter;
     text-align: center;
     padding: 0 33px;
@@ -117,11 +124,11 @@
     width: 206px;
   }
 
-  .pink-application__item--win {
+  .pink-application__item-win {
     height: 43px;
   }
 
-  .pink-application__item--android {
+  .pink-application__item-android {
     width: 45px;
     height: 49px;
   }
@@ -140,7 +147,7 @@
     left: 129px;
   }
 
-  .pink__title {
+  .pink-application__pink__title {
     font-size: 50px;
     line-height: 60px;
     padding: 0 30px;
@@ -156,6 +163,6 @@
   }
 
   .pink-application__more-platforms {
-    margin-top: 55px;
+    margin-top: 53px;
   }
 }

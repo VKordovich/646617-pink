@@ -1,7 +1,6 @@
 @background-footer: #f2f2f2;
 @font-size-footer: 24px;
 @font-height-footer: 30px;
-@font-family:  "Open Sans", "Arial", sans-serif;
 @color-footer: #d22856;
 
 .page-footer {
@@ -9,12 +8,15 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
   font-size: @font-size-footer;
   color: black;
   line-height: @font-height-footer;
-  font-family: @font-family;
   position: relative;
+  min-height: 613px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 411px;
 }
 
 .page-footer__text {
@@ -27,12 +29,13 @@
 
 .page-footer__contacts-list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 38px;
   padding: 0;
   text-align: center;
   font-size: 18px;
   font-weight: 800;
+  width: 280px;
 }
 
 .page-footer__select-contact {
@@ -45,6 +48,7 @@
   font-weight: 200;
   color: @color-footer;
   line-height: 29px;
+  border-bottom: 2px solid white;
 }
 
 .page-footer__type-contact:hover {
@@ -68,17 +72,16 @@
   position: absolute;
   top: -32px;
   left: 0;
-  z-index: -1;
-  width: 320px;
+  z-index: -2;
+  width: 100%;
   max-height: 645px;
 }
 
-.main-wrapper-footer {
-  width: 280px;
-  margin: 0 auto;
+.page-footer__main-wrapper-footer {
+  background-color: white;
 }
 
-.main-wrapper-footer::before {
+.page-footer__main-wrapper-footer::before {
   content: "";
   width: 16px;
   background-color: @color-footer;
@@ -87,7 +90,8 @@
   border-radius: 50%;
   position: absolute;
   top: 515px;
-  left: 152px;
+  left: 50%;
+  z-index: -1;
 }
 
 .page-footer__main {
@@ -109,8 +113,23 @@
   fill: white;
 }
 
+.page-footer__maps iframe {
+  height: 200px;
+  width: 100%;
+  border: 0;
+}
+
+.page-footer__maps::before {
+  content: "";
+  width: 100%;
+  height: 35px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-size: 100% 35px;
+  position: absolute;
+}
+
 @media (min-width: 660px) {
-  .main-wrapper-footer {
+  .page-footer__main-wrapper-footer {
     width: 100%;
     margin: 0;
     background-color: white;
@@ -120,6 +139,7 @@
   .page-footer {
     background-color: transparent;
     min-height: 906px;
+    background-position: 50% 406px;
   }
 
   .page-footer__text {
@@ -137,6 +157,7 @@
     justify-content: center;
     margin-top: 24px;
     margin-bottom: 0;
+    width: auto;
   }
 
   .page-footer__item {
@@ -180,15 +201,24 @@
     width: 100%;
   }
 
-  .main-wrapper-footer::before {
+  .page-footer__main-wrapper-footer::before {
     top: 609px;
-    left: 322px;
+    left: 50%;
   }
 
   .page-footer__map {
     top: 91px;
-    width: 700px;
     max-height: 800px;
+  }
+
+  .page-footer__maps iframe {
+    height: 375px;
+  }
+
+  .page-footer__maps::before {
+    content: "";
+    height: 70px;
+    background-size: 100% 70px;
   }
 }
 
@@ -200,20 +230,14 @@
     line-height: 60px;
   }
 
-  .page-footer__triangle {
+  .page-footer__main-wrapper-footer {
     width: 100%;
-    min-height: 125px;
-  }
-
-  .page-footer__triangle-img {
-    top: 364px;
-    width: 100%;
+    margin: 0 auto;
+    position: relative;
   }
 
   .page-footer__map {
-    width: 1200px;
-    min-height: 767px;
-    top: 89px;
+    top: -284px;
     max-height: 976px;
   }
 
@@ -234,13 +258,14 @@
   }
 
   .page-footer__type-contact {
-    margin-top: 22px;
+    margin-top: 23px;
     line-height: 30px;
   }
 
   .page-footer__item--center {
     margin: 0 30px;
     margin-top: 14px;
+    padding-left: 0;
   }
 
   .page-footer__item--position {
@@ -249,9 +274,15 @@
     margin-top: 16px;
   }
 
+  .page-footer__item:last-child {
+    margin-bottom: 3px;
+  }
+
   .page-footer {
     min-height: 1065px;
-    background-position-y: 51px;
+    background-size: 100% 100px;
+    background-position: 50% 371px;
+    background-image: none;
   }
 
   .page-footer__main {
@@ -259,8 +290,26 @@
     min-height: 197px;
   }
 
-  .main-wrapper-footer::before {
+  .page-footer__main-wrapper-footer::before {
     top: 640px;
-    left: 591px;
+    left: 50%;
+    z-index: -1;
+  }
+
+  .page-footer__maps {
+    position: relative;
+  }
+
+  .page-footer__maps::before {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100% 100px;
+    position: absolute;
+  }
+
+  .page-footer__maps iframe {
+    height: 498px;
   }
 }

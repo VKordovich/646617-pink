@@ -5,81 +5,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="fonts">
-  <link rel="preload" href="fonts/opensanslight.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/PictureFill.js" async></script>
 </head>
 
 <body>
-
-  <svg style="display:none;">
-    <symbol id="Layer_1" x="0px" y="0px" viewBox="0 0 1200 94.074">
-      <polygon points="1200,0 0,0 0,94.074 " />
-    </symbol>
-    <symbol id="toggle-left" x="0px" y="0px" viewBox="0 0 21.706 41.719">
-      <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
-    </symbol>
-    <symbol id="toggle-right" x="0px" y="0px" viewBox="0 0 21.706 41.719">
-      <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
-    </symbol>
-    <symbol id="yes" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09">
-      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
-    </symbol>
-    <symbol id="no" x="0px" y="0px" viewBox="0 0 26.752 26.752">
-      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
-    </symbol>
-    <symbol id="triangle" x="0px" y="0px" viewBox="0 0 595.28 61.905">
-      <polygon class="page-footer__color" fill="#000000" points="297.64,61.905 0,0 595.28,0 " />
-    </symbol>
-    <symbol id="twitter" viewBox="0 0 17.5 14.663">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
-    </symbol>
-    <symbol id="facebook" viewBox="0 0 8.673 18.944">
-      <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
-    </symbol>
-    <symbol id="youtube" viewBox="0 0 14.64 13.96">
-      <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
-    </symbol>
-    <symbol id="academy" viewBox="0 0 60 60">
-      <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-    </symbol>
-  </svg>
-
+  <div style="display:none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
-    <div class="decorative-wrap">
-      <div class="wrapper-navigation">
+    <div class="page-header__decorative-wrap">
+      <div class="page-header__wrapper-navigation">
         <div class="page-header__logo">
-          <div class="main-wrapper-head">
-            <a class="page-header__img">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="page-header__logo-head" src="img/logo-pink-white-mobile.svg" width="147" height="40" alt="Пинк">
-              </picture>
+          <div class="page-header__main-wrapper-head">
+            <a class="page-header__img" href="#">
+              <svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+                <use xlink:href="#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="page-header__logo-tablet" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+                <use xlink:href="#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="page-header__logo-desktop" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+                <use xlink:href="#logo-pink-white-desktop"></use>
+              </svg>
             </a>
             <button class="page-header__button-head " type="button">Открыть меню</button>
           </div>
         </div>
         <nav class="main-nav page-header__main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__list-item">
-              <a class="site-list__adress site-list__adress--active" href="#">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__adress site-list__adress--active" href="#">Главная</a>
             </li>
-            <li class="site-list__list-item">
-              <a class="site-list__adress" href="photo.html">Фотографии</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__adress" href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__list-item">
-              <a class="site-list__adress" href="form.html">Конкурс</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__adress" href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__list-item">
-              <a class="site-list__adress" href="https://htmlacademy.ru/">HTML Academy</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__adress" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="wrapper-head-img">
+    <div class="page-header__wrapper-head-img">
       <div class="page-header__main-image">
         <picture>
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
@@ -91,20 +65,19 @@
             alt="Пинк»">
         </picture>
       </div>
-
       <section class="pink-application">
-        <div class="main-wrapper-app">
-          <h2 class="pink__title">Взгляните на жизнь иначе!</h2>
+        <div class="pink-application__main-wrapper-app">
+          <h2 class="pink-application__pink__title">Взгляните на жизнь иначе!</h2>
           <button class="button pink-application__button-app pink-application--set" type="button">Скачать приложение</button>
           <ul class="pink-application__platforms">
-            <li class="pink-application__item pink-application__item--apple">
-              <a class="pink-application__item-img" href="#">Apple</a>
+            <li class="pink-application__item">
+              <a class="pink-application__item-apple" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Apple</a>
             </li>
-            <li class="pink-application__item pink-application__item--android">
-              <a class="pink-application__item-img" href="#">Android</a>
+            <li class="pink-application__item ">
+              <a class="pink-application__item-android" href="https://play.google.com/store/apps?hl=ru">Android</a>
             </li>
-            <li class="pink-application__item pink-application__item--win">
-              <a class="pink-application__item-img" href="#">Windows</a>
+            <li class="pink-application__item ">
+              <a class="pink-application__item-win" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Windows</a>
             </li>
           </ul>
           <p class="pink-application__more-platforms">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows
@@ -113,43 +86,40 @@
       </section>
     </div>
   </header>
-
   <main class="page-main">
-
     <h1 class="visually-hidden">Pink-измени мир</h1>
     <section class="predestination">
       <h2 class="visually-hidden">Зачем этот сервис?</h2>
-      <div class="predestination-wrapper-title">
+      <div class="predestination__wrapper-title">
         <p class="predestination__title">Устали от серости мегаполиса?</p>
         <p class="predestination__title predestination__title--size">Нам есть, что вам предложить!</p>
-        <div class="predestination__angle-img">
-          <svg class="predestination__angle" x="0px" y="0px" width="320px" height="31px">
-            <use xlink:href="#Layer_1"></use>
-          </svg>
-        </div>
       </div>
-      <div class="predestination__wrap">
-        <ul class="predestination__list">
-          <li class="predestination__item">
-            <h3 class="predestination__item-title">Поднимает настроение</h3>
-            <p class="predestination__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально
-              в несколько кликов!</p>
-          </li>
-          <li class="predestination__item">
-            <h3 class="predestination__item-title">Меняет мир вокруг</h3>
-            <p class="predestination__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="predestination__item">
-            <h3 class="predestination__item-title">Заводит новых друзей</h3>
-            <p class="predestination__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
-          </li>
-        </ul>
+      <div class="predestination__wrapper">
+        <div class="predestination__wrap">
+          <ul class="predestination__list">
+            <li class="predestination__item">
+              <h3 class="predestination__item-title">Поднимает настроение</h3>
+              <p class="predestination__item-text">Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально
+                в несколько кликов!</p>
+            </li>
+            <li class="predestination__item">
+              <h3 class="predestination__item-title">Меняет мир вокруг</h3>
+              <p class="predestination__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы
+                усилить эффект</p>
+            </li>
+            <li class="predestination__item">
+              <h3 class="predestination__item-title">Заводит новых друзей</h3>
+              <p class="predestination__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="predestination__research">
         <p class="predestination__hours">24</p>
-        <div class="research-wrap">
+        <div class="predestination__research-wrap">
           <h3 class="predestination__research-title">Эффект <br>на 24 часа!</h3>
           <p class="predestination__research-text">Британские ученые провели исследования и доказали, <br>что
             положительный
@@ -158,7 +128,6 @@
         </div>
       </div>
     </section>
-
     <section class="reviews slider__list">
       <h2 class="visually-hidden">Отзывы</h2>
       <blockquote class="reviews__item slider__item">
@@ -182,27 +151,21 @@
       <p class="reviews__toggles slider__toggles">
         <button class="slider__toggle slider__toggle--active slider__toggle--left" type="button">
           <svg width="21.706px" height="41.719px">
-            <use xlink:href="#toggle-left"></use>
+            <use xlink:href="#icon-review-arrow-left"></use>
           </svg>
         </button>
         <button class="slider__toggle slider__toggle--center" type="button"> </button>
         <button class="slider__toggle slider__toggle--right" type="button">
           <svg width="21.706px" height="41.719px">
-            <use xlink:href="#toggle-right"></use>
+            <use xlink:href="#icon-review-arrow-right"></use>
           </svg>
         </button>
       </p>
-      <div class="review__angle-img">
-        <svg class="review__angle" x="0px" y="0px" width="320px" height="31px">
-          <use xlink:href="#Layer_1"></use>
-        </svg>
-      </div>
     </section>
-
     <section class="cost">
-      <div class="main-wrapper-cost">
+      <div class="cost__main-wrapper-cost">
         <h2 class="visually-hidden">Стоимость</h2>
-        <table class="cost__rate-table" width="200px">
+        <table class="cost__rate-table">
           <tr class="cost__row">
             <th class="cost__table-empty"></th>
             <th class="cost__table-head">База
@@ -217,7 +180,7 @@
               <span class="cost__table-text">Розовый фильтр</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -225,7 +188,7 @@
               <span class="cost__table-text">Розовый фильтр</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -233,7 +196,7 @@
               <span class="cost__table-text">Розовый фильтр</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -244,7 +207,7 @@
               <span class="cost__table-text">Смайлики</span>
               <span class="cost__icon cost__icon--no">
                 <svg width="26.752px" height="26.752px">
-                  <use xlink:href="#no"></use>
+                  <use xlink:href="#icon-no"></use>
                 </svg>
               </span>
             </td>
@@ -252,7 +215,7 @@
               <span class="cost__table-text">Смайлики</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -260,7 +223,7 @@
               <span class="cost__table-text">Смайлики</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -271,7 +234,7 @@
               <span class="cost__table-text">Комментарии</span>
               <span class="cost__icon cost__icon--no">
                 <svg width="26.752px" height="26.752px">
-                  <use xlink:href="#no"></use>
+                  <use xlink:href="#icon-no"></use>
                 </svg>
               </span>
             </td>
@@ -279,7 +242,7 @@
               <span class="cost__table-text">Комментарии</span>
               <span class="cost__icon cost__icon--no">
                 <svg width="26.752px" height="26.752px">
-                  <use xlink:href="#no"></use>
+                  <use xlink:href="#icon-no"></use>
                 </svg>
               </span>
             </td>
@@ -287,7 +250,7 @@
               <span class="cost__table-text">Комментарии</span>
               <span class="cost__icon">
                 <svg width="21.698px" height="16.09px">
-                  <use xlink:href="#yes"></use>
+                  <use xlink:href="#icon-yes"></use>
                 </svg>
               </span>
             </td>
@@ -300,11 +263,9 @@
         </p>
       </div>
     </section>
-
   </main>
-
   <footer class="page-footer">
-    <div class="main-wrapper-footer">
+    <div class="page-footer__main-wrapper-footer">
       <p class="page-footer__text">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="page-footer__contacts-list">
         <li class="page-footer__item">
@@ -323,68 +284,70 @@
           </p>
         </li>
       </ul>
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
-        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-      </picture>
+      <div class="page-footer__maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7545537966232!2d30.319507416363926!3d59.93621488187527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x614a962793fc5dd7!2z0JLQuNC60LjQvdCz0Lg!5e0!3m2!1sru!2sru!4v1540921964704"
+          width="1200" height="450" allowfullscreen></iframe>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+          <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+        </picture>
+      </div>
     </div>
-    <div class="page-footer__triangle-img">
-      <svg class="page-footer__triangle" width="595.28px" height="61.905px">
-        <use xlink:href="#triangle"></use>
-      </svg>
-    </div>
-
     <div class="footer page-footer__main">
-      <div class="main-wrapper-body">
+      <div class="footer__main-wrapper-body">
         <div class="logo-footer footer__logo-pink">
-          <img class="logo-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+          <a class="logo-footer__adress" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="logo-footer__mobile" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="logo-footer__desktop" xmlns="http://www.w3.org/2000/svg" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-desktop"></use>
+            </svg>
+          </a>
         </div>
-
         <div class="social footer__social-pink">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__a social__a--twitter" href="#" aria-label="Твиттер">
                 <span class="social__name">Твиттер</span>
-                <svg width="17.5px" height="14.663px">
-                  <use xlink:href="#twitter"></use>
+                <svg width="17px" height="15px">
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__a social__a--facebook" href="#" aria-label="Фейсбук">
                 <span class="social__name">Фейсбук</span>
-                <svg width="8.673px" height="18.944px">
-                  <use xlink:href="#facebook"></use>
+                <svg width="9px" height="19px">
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__a social__a--youtube" href="#" aria-label="Ютуб">
                 <span class="social__name">Ютуб</span>
-                <svg width="14.64px" height="13.96px">
-                  <use xlink:href="#youtube"></use>
+                <svg width="15px" height="14px">
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-
         <div class="copyright footer__copyright-pink">
           <p class="copyright__name">Разработано</p>
-          <a class="copyright__logo" href="#">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="52px" height="40px">
-              <use xlink:href="#academy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

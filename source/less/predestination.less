@@ -1,48 +1,46 @@
 @background-color: #f2f2f2;
 @font-size: 14px;
 @font-height: 24px;
-@font-family:  "Open Sans", "Arial", sans-serif;
 @color: black;
 
 .predestination {
   background-color: @background-color;
 }
 
-.predestination-wrapper-title {
+.predestination__wrapper-title {
   background-color: white;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   position: relative;
 }
 
-.predestination__angle {
-  width: 320px;
-  height: 31px;
-  position: absolute;
-  bottom: -28px;
-  fill: white;
+.predestination__wrapper {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 30px;
 }
 
 .predestination__title {
   color: @color;
   font-size: 24px;
-  font-family: @font-family;
   line-height: 30px;
   font-weight: 100;
   text-align: center;
+  width: 320px;
+  margin: 0 auto;
   margin-top: 25px;
 }
 
 .predestination__title--size {
   padding-top: 1px;
+  margin-bottom: 0;
+  padding-bottom: 31px;
 }
 
 .predestination__list {
   list-style: none;
   margin: 0;
-  margin-top: 74px;
   padding: 0;
   background-color: @background-color;
-  font-family: @font-family;
 }
 
 .predestination__item {
@@ -64,9 +62,10 @@
 
 .predestination__wrap {
   padding-bottom: 287px;
-  background-position: 50% 111%;
+  background-position: 50% 109%;
   background-repeat: no-repeat;
   background-image: url("../img/iphone-screen-mobile@1x.png");
+  padding-top: 62px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -90,9 +89,11 @@
   .predestination {
     flex-direction: column;
     display: flex;
+    background-color: white;
   }
 
   .predestination__title {
+    width: 660px;
     font-size: 40px;
     line-height: 48px;
     margin-top: 34px;
@@ -102,25 +103,26 @@
   .predestination__title--size {
     padding: 0 100px;
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 48px;
+    box-sizing: border-box;
   }
 
-  .predestination__angle {
-    width: 660px;
-    height: 60px;
-    bottom: -55px;
+  .predestination__wrapper {
+    background-size: 100%;
+    background-color: #f2f2f2;
   }
 
   .predestination__wrap {
     padding-left: 309px;
-    padding-bottom: 0;
+    padding-bottom: 42px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left bottom;
     z-index: 1;
     box-sizing: border-box;
     width: 620px;
     margin: 0 auto;
-    min-height: 486px;
+    min-height: 483px;
+    padding-top: 68px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
@@ -129,8 +131,7 @@
   }
 
   .predestination__list {
-    margin-top: 83px;
-    margin-bottom: 43px;
+    margin-top: 5px;
   }
 
   .predestination__item-text,
@@ -154,6 +155,7 @@
 
   .predestination__item:nth-child(3) {
     padding-left: 2px;
+    margin-bottom: 0;
   }
 
   .predestination__research {
@@ -165,6 +167,9 @@
     line-height: 24px;
     text-align: center;
     position: relative;
+    box-sizing: border-box;
+    width: 660px;
+    margin: auto;
 
     &::before {
       content: "";
@@ -181,7 +186,7 @@
     }
   }
 
-  .research-wrap {
+  .predestination__research-wrap {
     width: 300px;
     text-align: start;
   }
@@ -231,18 +236,20 @@
   .predestination {
     flex-direction: column;
     display: flex;
+    background-color: @background-color;
   }
 
   .predestination__title {
     font-size: 50px;
     margin-top: 60px;
+    width: 1200px;
   }
 
   .predestination__title--size {
     padding: 0 350px;
     margin-top: 5px;
     line-height: 60px;
-    margin-bottom: 61px;
+    margin-bottom: 78px;
   }
 
   .predestination__item {
@@ -273,12 +280,6 @@
     margin-top: 1px;
   }
 
-  .predestination__angle {
-    width: 1200px;
-    height: 94px;
-    bottom: -94px;
-  }
-
   .predestination__list {
     display: flex;
     order: 2;
@@ -286,13 +287,17 @@
     margin-bottom: 0;
   }
 
+  .predestination__wrapper {
+    padding-top: 0;
+  }
+
   .predestination__wrap {
     width: 940px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 250px;
+    padding-top: 248px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-1-desktop@1x.png");
-    background-position: initial;
+    background-position: top;
     background-position-x: right, center, left;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -344,7 +349,7 @@
     line-height: 30px;
   }
 
-  .research-wrap {
+  .predestination__research-wrap {
     width: 540px;
   }
 

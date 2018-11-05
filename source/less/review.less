@@ -1,13 +1,11 @@
 @rev-background-color: white;
 @rev-size: 14px;
 @rev-height: 30px;
-@rev-family:  "Open Sans", "Arial", sans-serif;
 @rev-color: black;
 
 .reviews {
   background-color: @rev-background-color;
   font-size: @rev-size;
-  font-family: @rev-family;
   position: relative;
 }
 
@@ -41,14 +39,6 @@
   padding-left: 9px;
 }
 
-.review__angle {
-  width: 320px;
-  height: 31px;
-  position: absolute;
-  bottom: -27px;
-  fill: white;
-}
-
 @media (min-width: 660px) {
   .reviews {
     font-size: 18px;
@@ -80,12 +70,6 @@
     margin: auto;
   }
 
-  .review__angle {
-    width: 660px;
-    height: 60px;
-    bottom: -56px;
-  }
-
   .reviews__toggles {
     margin-bottom: 19px;
   }
@@ -95,7 +79,7 @@
   .reviews__item {
     width: 820px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 
   .reviews {
@@ -115,15 +99,11 @@
   }
 
   .reviews__toggles {
+    width: 1200px;
     order: -1;
-    margin: 9px 0;
+    margin: 0 auto;
+    margin-top: 9px;
     margin-bottom: 7px;
     padding: 0;
-  }
-
-  .review__angle {
-    width: 1200px;
-    height: 94px;
-    bottom: -94px;
   }
 }

@@ -1,7 +1,6 @@
 @contact-background: white;
 @contact-font-size: 18px;
 @contact-font-height: 30px;
-@contact-family:  "Open Sans", "Arial", sans-serif;
 
 .contact {
   border: none;
@@ -27,7 +26,6 @@
   padding: 20px 7px 20px 20px;
   margin-top: 6px;
   font-size: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
@@ -65,12 +63,33 @@
     margin-bottom: 10px;
   }
 
+  .contact__name::after {
+    content: "";
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2px;
+    bottom: 39px;
+  }
+
+  .contact__name--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .contact__name--mail::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+
   .contact__name {
     padding: 0 35px 0 19px;
     margin-bottom: 26px;
+    position: relative;
   }
 
-  .contact-wrapper {
+  .contact__wrapper {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -97,7 +116,7 @@
 }
 
 @media (min-width: 1200px) {
-  .contact-wrapper {
+  .contact__wrapper {
     flex-direction: row;
     width: 820px;
     margin-top: 29px;
@@ -119,7 +138,7 @@
 
   .contact__name:nth-of-type(1) {
     order: 2;
-    width: 375px;
+    width: 356px;
   }
 
   .contact__input-name:nth-of-type(1) {

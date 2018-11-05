@@ -24,9 +24,26 @@
 .editor__item {
   margin-right: 32px;
   display: flex;
+  z-index: 10;
 }
 
 .editor__item svg {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.editor__item:hover svg {
+  fill: rgba(40, 54, 69, 0.5);
+}
+
+.editor__item svg:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}
+
+.editor__item:active svg {
+  fill: #d22856;
+}
+
+.editor__item--active svg {
   fill: #d22856;
 }
 
@@ -107,8 +124,13 @@
   display: none;
 }
 
+.editor__full-photo {
+  display: block;
+  max-height: 386px;
+}
+
 @media (min-width: 660px) {
-  .editor-main__wrapper {
+  .editor__main__wrapper {
     display: flex;
     padding: 38px 0 0;
     width: 620px;
@@ -124,7 +146,7 @@
     background-position-x: center;
   }
 
-  .editor-wrapper {
+  .editor__wrapper {
     width: 300px;
     padding-left: 25px;
     box-sizing: border-box;
@@ -194,7 +216,7 @@
     width: 17px;
   }
 
-  .editor-wrapper-tool {
+  .editor__wrapper-tool {
     display: flex;
     flex-direction: row;
   }
@@ -210,6 +232,10 @@
     text-align: start;
     padding-bottom: 54px;
   }
+
+  .editor__full-photo {
+    max-height: 400px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -220,7 +246,7 @@
     padding-bottom: 6px;
   }
 
-  .editor-main__wrapper {
+  .editor__main__wrapper {
     padding: 0;
     width: 800px;
   }
@@ -231,7 +257,7 @@
     margin-left: 10px;
   }
 
-  .editor-wrapper {
+  .editor__wrapper {
     width: 410px;
   }
 
