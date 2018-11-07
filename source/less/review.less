@@ -12,7 +12,7 @@
 .reviews__item {
   margin: 0;
   text-align: center;
-  padding-top: 23px;
+  padding: 23px 0 0 0;
 }
 
 .reviews__name {
@@ -20,7 +20,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 0;
+  margin: 18px 0 0 0;
 }
 
 .reviews__years {
@@ -33,30 +33,28 @@
   padding: 0 20px;
 }
 
-.reviews__toggles {
-  margin: 22px 0;
-  margin-bottom: 38px;
-  padding-left: 9px;
+.reviews__slider {
+  margin: 22px 0 38px;
+  padding: 0 0 0 9px;
 }
 
 @media (min-width: 660px) {
   .reviews {
     font-size: 18px;
-    margin-top: 77px;
+    margin: 77px 0 0 0;
   }
 
   .reviews__years {
     display: inline;
     order: 2;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 3px 0 3px 0;
     font-size: 14px;
   }
 
   .reviews__name {
     order: 1;
     font-size: 20px;
-    margin-top: 16px;
+    margin: 16px 0 0 0;
   }
 
   .reviews__quote {
@@ -70,22 +68,21 @@
     margin: auto;
   }
 
-  .reviews__toggles {
-    margin-bottom: 19px;
+  .reviews__slider {
+    margin: 22px 0 19px;
   }
 }
 
 @media (min-width: 1200px) {
   .reviews__item {
     width: 820px;
-    margin: auto;
-    margin-bottom: 38px;
+    margin: 0 auto 38px;
   }
 
   .reviews {
     display: flex;
     flex-direction: column;
-    margin-top: 59px;
+    margin: 59px 0 0 0;
   }
 
   .reviews__name {
@@ -98,12 +95,10 @@
     line-height: 30px;
   }
 
-  .reviews__toggles {
+  .reviews__slider {
     width: 1200px;
     order: -1;
-    margin: 0 auto;
-    margin-top: 9px;
-    margin-bottom: 7px;
+    margin: 9px auto 7px;
     padding: 0;
   }
 }
